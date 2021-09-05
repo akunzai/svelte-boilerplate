@@ -1,7 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const path = require('path');
 const sveltePreprocess = require('svelte-preprocess');
-
+const path = require('path');
 const mode = process.env.NODE_ENV || 'development';
 const prod = mode === 'production';
 
@@ -38,13 +37,37 @@ module.exports = {
             },
             emitCss: prod,
             hotReload: !prod,
-            preprocess: sveltePreprocess({ sourceMap: !prod }),
+            preprocess: sveltePreprocess({
+              sourceMap: !prod,
+              scss: {
+                renderSync: true,
+                implementation: require('sass'),
+              },
+            }),
           },
         },
       },
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: !prod,
+            },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: !prod,
+            },
+          },
+        ],
       },
       {
         // required to prevent errors from Svelte on Webpack 5+
