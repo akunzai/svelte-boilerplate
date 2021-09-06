@@ -1,6 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const sveltePreprocess = require('svelte-preprocess');
 const path = require('path');
+const sveltePreprocess = require('svelte-preprocess');
 const mode = process.env.NODE_ENV || 'development';
 const prod = mode === 'production';
 
@@ -19,6 +19,7 @@ module.exports = {
     path: path.join(__dirname, '/public'),
     filename: '[name].js',
     chunkFilename: '[name].[id].js',
+    assetModuleFilename: 'build/[hash][ext][query]'
   },
   module: {
     rules: [
@@ -36,13 +37,13 @@ module.exports = {
               dev: !prod,
             },
             emitCss: prod,
-            hotReload: !prod,
+            // hotReload: !prod,
             preprocess: sveltePreprocess({
               sourceMap: !prod,
               scss: {
                 renderSync: true,
                 implementation: require('sass'),
-              },
+              }
             }),
           },
         },
@@ -68,6 +69,15 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        // https://webpack.js.org/guides/asset-modules/
+        test: /\.(eot|otf|ttf|woff(2)?)(\?v=\d+\.\d+\.\d+)?$/,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        type: 'asset/resource',
       },
       {
         // required to prevent errors from Svelte on Webpack 5+

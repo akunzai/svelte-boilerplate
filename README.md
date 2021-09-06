@@ -1,64 +1,44 @@
-# svelte app
+# My Svelte Boilerplate
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template-webpack.
+[![Build Status][ci-badge]][ci] [![Code Coverage][codecov-badge]][codecov]
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+[ci]: https://github.com/akunzai/svelte-boilerplate/actions?query=workflow%3ACI
+[ci-badge]: https://github.com/akunzai/svelte-boilerplate/workflows/CI/badge.svg
+[codecov]: https://codecov.io/gh/akunzai/svelte-boilerplate
+[codecov-badge]: https://codecov.io/gh/akunzai/svelte-boilerplate/branch/main/graph/badge.svg?token=gEZ8y4Ta6p
 
-```bash
-npx degit sveltejs/template-webpack svelte-app
-cd svelte-app
+[Svelte](https://svelte.dev) boilerplate to kick-start new project with SCSS + Bootstrap
+
+## Requirement
+
+- [Node.js](https://nodejs.org)
+- [Yarn package manager](https://yarnpkg.com/)
+
+## [Get started](https://svelte.dev/blog/the-easiest-way-to-get-started)
+
+```sh
+# install npm packages
+yarn install
+
+# watch and serve a dev server at http://localhost:8080/
+yarn start
+
+# Running unit tests
+yarn test
+
+# build the project in production mode. The build artifacts will be stored in the `public/build/` directory
+yarn build
 ```
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+## Reference
 
-
-## Get started
-
-Install the dependencies...
-
-```bash
-cd svelte-app
-npm install
-```
-
-...then start webpack:
-
-```bash
-npm run dev
-```
-
-Navigate to [localhost:8080](http://localhost:8080). You should see your app running. Edit a component file in `src`, save it, and the page should reload with your changes.
-
-
-## Deploying to the web
-
-### With [now](https://zeit.co/now)
-
-Install `now` if you haven't already:
-
-```bash
-npm install -g now
-```
-
-Then, from within your project folder:
-
-```bash
-now
-```
-
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public
-```
+- [Svelte API reference](https://svelte.dev/docs)
+- [Svelte Rollup Template](https://github.com/sveltejs/template)
+- [Svelte Webpack Template](https://github.com/sveltejs/template-webpack)
+- [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)
+- [Svelte Preprocess](https://github.com/sveltejs/svelte-preprocess)
+- [Svelte Navigator](https://github.com/mefechoel/svelte-navigator)
+- [Internationalization library for Svelte](https://github.com/kaisermann/svelte-i18n)
+- [Jest transformer for Svelte](https://github.com/mihar-22/svelte-jester)
+- [Svelte Testing Library](https://testing-library.com/docs/svelte-testing-library/intro)
+- [Mock Service Worker](https://mswjs.io/docs/)

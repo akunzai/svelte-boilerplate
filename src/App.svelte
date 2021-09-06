@@ -1,30 +1,18 @@
 <script lang="ts">
-	export let name: string;
+  import { Route,Router } from 'svelte-navigator';
+  import Home from './common/Home.svelte';
+  import NavMenu from './common/NavMenu.svelte';
+  import Counter from './counter/Counter.svelte';
+  import TodoDetail from './todo/TodoDetail.svelte';
+  import TodoList from './todo/TodoList.svelte';
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
-
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
+<Router>
+  <NavMenu title={document.title} />
+  <main class="container">
+    <Route path="/" component={Home}/>
+    <Route path="/counter" component={Counter} />
+    <Route path="/todo-list" component={TodoList} />
+    <Route path="/todo/:id" component={TodoDetail} />
+  </main>
+</Router>
