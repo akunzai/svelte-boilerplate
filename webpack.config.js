@@ -19,7 +19,7 @@ module.exports = {
     path: path.join(__dirname, '/public'),
     filename: '[name].js',
     chunkFilename: '[name].[id].js',
-    assetModuleFilename: 'build/[hash][ext][query]'
+    assetModuleFilename: 'build/[hash][ext][query]',
   },
   module: {
     rules: [
@@ -43,7 +43,7 @@ module.exports = {
               scss: {
                 renderSync: true,
                 implementation: require('sass'),
-              }
+              },
             }),
           },
         },
@@ -97,5 +97,6 @@ module.exports = {
   devtool: prod ? false : 'source-map',
   devServer: {
     hot: true,
+    historyApiFallback: true,
   },
 };
