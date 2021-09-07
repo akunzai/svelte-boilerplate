@@ -28,6 +28,9 @@ yarn test
 
 # build the project in production mode. The build artifacts will be stored in the `public/build/` directory
 yarn build
+
+# extracts i18n messages from source code
+yarn i18n:extract src/locales/zh-Hant.json
 ```
 
 ## Reference
