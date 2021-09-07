@@ -8,6 +8,10 @@
   let collapsed = true;
   let expanded = false;
 
+  locale.subscribe((lang) => {
+    localStorage.setItem('locale',lang);
+  });
+
   const isCurrentLanguage = (pattern: RegExp): boolean => {
     const currentLocale = get(locale);
     return pattern.test(currentLocale);
