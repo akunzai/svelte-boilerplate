@@ -8,7 +8,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "lint": "svelte-check"
+    "lint": "svelte-check",
+    "i18n:extract": "svelte-i18n extract 'src/**/*.svelte'"
   },
   "dependencies": {
     "rxjs": "7.3.0",

@@ -7,10 +7,10 @@
   import TodoList from './todo/TodoList.svelte';
 </script>
 
-<Router>
+<Router primary={false}>
   <NavMenu title={document.title} />
   <main class="container">
-    <Route path="/" component={Home}/>
+    <Route component={Home}/>
     <Route path="/counter" component={Counter} />
     <Route path="/todo-list" component={TodoList} />
     <Route path="/todo/:id" component={TodoDetail} />

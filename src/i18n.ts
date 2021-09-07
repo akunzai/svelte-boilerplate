@@ -8,6 +8,6 @@ addMessages('zh-TW', zhHant);
 
 init({
   fallbackLocale: 'en',
-  initialLocale: getLocaleFromNavigator(),
+  initialLocale: localStorage.getItem('locale') || getLocaleFromNavigator(),
   warnOnMissingMessages: false,
 });
