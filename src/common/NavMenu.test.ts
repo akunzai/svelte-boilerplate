@@ -1,6 +1,4 @@
 import { fireEvent, render, screen } from '@testing-library/svelte';
-import { locale } from 'svelte-i18n';
-import { get } from 'svelte/store';
 import '../i18nForTests';
 import NavMenu from './NavMenu.test.svelte';
 
@@ -22,8 +20,8 @@ test('support to toggle navigation', async () => {
 test('support to switch languages', async () => {
   await fireEvent.click(screen.getByRole('button', { name: /Toggle Languages/i }));
   await fireEvent.click(screen.getByRole('button', { name: /English/i }));
-  expect(get(locale)).toBe('en');
+  expect(localStorage.getItem('locale')).toBe('en');
   await fireEvent.click(screen.getByRole('button', { name: /Toggle Languages/i }));
   await fireEvent.click(screen.getByRole('button', { name: /正體中文/i }));
-  expect(get(locale)).toBe('zh-Hant');
+  expect(localStorage.getItem('locale')).toBe('zh-Hant');
 });
