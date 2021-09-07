@@ -5,7 +5,7 @@
 [ci]: https://github.com/akunzai/svelte-boilerplate/actions?query=workflow%3ACI
 [ci-badge]: https://github.com/akunzai/svelte-boilerplate/workflows/CI/badge.svg
 [codecov]: https://codecov.io/gh/akunzai/svelte-boilerplate
-[codecov-badge]: https://codecov.io/gh/akunzai/svelte-boilerplate/branch/main/graph/badge.svg?token=gEZ8y4Ta6p
+[codecov-badge]: https://codecov.io/gh/akunzai/svelte-boilerplate/branch/main/graph/badge.svg?token=MIhzjUoLaM
 
 [Svelte](https://svelte.dev) boilerplate to kick-start new project with SCSS + Bootstrap
 
