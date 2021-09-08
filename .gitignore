@@ -9,6 +9,7 @@ public/build
 # IDE - VSCode
 .vscode/*
 !.vscode/launch.json
+!.vscode/extensions.json
 .history/*
 
 # misc
