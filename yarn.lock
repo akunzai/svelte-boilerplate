@@ -3003,7 +3003,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:^3.1.1":
+"fast-glob@npm:^3.1.1, fast-glob@npm:^3.2.7":
   version: 3.2.7
   resolution: "fast-glob@npm:3.2.7"
   dependencies:
@@ -3261,7 +3261,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^7.1.1, glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.4, glob@npm:^7.1.6":
+"glob@npm:^7.1.1, glob@npm:^7.1.2, glob@npm:^7.1.3, glob@npm:^7.1.4":
   version: 7.1.7
   resolution: "glob@npm:7.1.7"
   dependencies:
@@ -6667,7 +6667,7 @@ __metadata:
     sass: 1.39.2
     sass-loader: 12.1.0
     svelte: 3.39.0
-    svelte-check: 2.2.5
+    svelte-check: 2.2.6
     svelte-i18n: 3.3.10
     svelte-jester: 1.8.2
     svelte-loader: 3.1.2
@@ -6684,13 +6684,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"svelte-check@npm:2.2.5":
-  version: 2.2.5
-  resolution: "svelte-check@npm:2.2.5"
+"svelte-check@npm:2.2.6":
+  version: 2.2.6
+  resolution: "svelte-check@npm:2.2.6"
   dependencies:
     chalk: ^4.0.0
     chokidar: ^3.4.1
-    glob: ^7.1.6
+    fast-glob: ^3.2.7
     import-fresh: ^3.2.1
     minimist: ^1.2.5
     sade: ^1.7.4
@@ -6701,7 +6701,7 @@ __metadata:
     svelte: ^3.24.0
   bin:
     svelte-check: bin/svelte-check
-  checksum: 5466f73942fd4049631708f8ca65faa0e49069bfe8a5305862e351e643d2cd0115a344a4eb3717e0212592103faf3c5ce83834da87ff148b81c9295f18f7a453
+  checksum: 6e136b4fc2acaccc070e372d4fee67fca333761b50f5891cafef26b285b912c5d909c47266eb4990cb7a4e3b6e0d33dc105f6c5f180b734c0b70f9cc2610d3ca
   languageName: node
   linkType: hard
 
