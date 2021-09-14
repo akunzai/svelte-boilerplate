@@ -366,7 +366,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime-corejs3@npm:^7.10.2":
+"@babel/runtime-corejs3@npm:^7.10.2, @babel/runtime-corejs3@npm:^7.10.3":
   version: 7.15.4
   resolution: "@babel/runtime-corejs3@npm:7.15.4"
   dependencies:
@@ -2334,6 +2334,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"core-js@npm:^3.6.5":
+  version: 3.17.3
+  resolution: "core-js@npm:3.17.3"
+  checksum: cdc61f068533469e15745e4644cc205916248b5b49d07840ed8e26a52e4aa557499e3d70e42a76dbc5e921f87d2db4365d9d3a5b8babbd351c3fd9e981d74fab
+  languageName: node
+  linkType: hard
+
 "core-util-is@npm:~1.0.0":
   version: 1.0.3
   resolution: "core-util-is@npm:1.0.3"
@@ -3400,6 +3407,13 @@ __metadata:
     readable-stream: ^2.0.1
     wbuf: ^1.1.0
   checksum: 2de144115197967ad6eeee33faf41096c6ba87078703c5cb011632dcfbffeb45784569e0cf02c317bd79c48375597c8ec88c30fff5bb0b023e8f654fb6e9c06e
+  languageName: node
+  linkType: hard
+
+"htm@npm:^3.0.4":
+  version: 3.1.0
+  resolution: "htm@npm:3.1.0"
+  checksum: d6d00146bcc1d2cc45ae6e82f5a54e8b5d1142fe67d3b7363503926c426f608e359ae7bc67242efa0e6afda278ae3865a303d82200a4399cabe53c0a05f82fa8
   languageName: node
   linkType: hard
 
@@ -6676,6 +6690,7 @@ __metadata:
     svelte: 3.39.0
     svelte-check: 2.2.6
     svelte-forms-lib: 1.10.7
+    svelte-htm: 1.1.1
     svelte-i18n: 3.3.10
     svelte-jester: 1.8.2
     svelte-loader: 3.1.2
@@ -6729,12 +6744,48 @@ __metadata:
   languageName: node
   linkType: hard
 
+"svelte-fragment-component@npm:^1.1.0":
+  version: 1.2.0
+  resolution: "svelte-fragment-component@npm:1.2.0"
+  peerDependencies:
+    svelte: 3.x
+  checksum: 55230b1cf2033a9214174c4bcc9d03913d5e66e44feb45a1e5abd4c83095dca5d585e5c9098fe3ba7c3287abf5813ed403cb9c8ed286973968d4acf91038aab7
+  languageName: node
+  linkType: hard
+
 "svelte-hmr@npm:^0.14.2":
   version: 0.14.7
   resolution: "svelte-hmr@npm:0.14.7"
   peerDependencies:
     svelte: ">=3.19.0"
   checksum: 1cad66958eb47ae01ee1b1836d4510b468947d8632afec0af875c2c0abeb690fd162654ca83a212497b2b5fdfd42fa2e7011745a873e1b7c25b01dc7b92d2767
+  languageName: node
+  linkType: hard
+
+"svelte-htm@npm:1.1.1":
+  version: 1.1.1
+  resolution: "svelte-htm@npm:1.1.1"
+  dependencies:
+    "@babel/runtime-corejs3": ^7.10.3
+    core-js: ^3.6.5
+    htm: ^3.0.4
+    svelte-fragment-component: ^1.1.0
+    svelte-hyperscript: ^1.1.1
+  peerDependencies:
+    svelte: 3.x
+  checksum: 71b6e8c2c2f17e811f1ad179b87149b689215909413d9d3f3ca1777c508ce8c560e6795c1f017aed20e334150cd07d5946b3d6bd08d8aee3fea628bc697e762d
+  languageName: node
+  linkType: hard
+
+"svelte-hyperscript@npm:^1.1.1":
+  version: 1.2.1
+  resolution: "svelte-hyperscript@npm:1.2.1"
+  dependencies:
+    "@babel/runtime-corejs3": ^7.10.3
+    core-js: ^3.6.5
+  peerDependencies:
+    svelte: 3.x
+  checksum: ef99e4772c48a00c2595c8979c3991c73f97fac0489d5a8a779e5db9b4ee83271da26c7c57ee3d6eb827b01236c9bf2ac5f43ee796349e89bade7185c8336853
   languageName: node
   linkType: hard
 
