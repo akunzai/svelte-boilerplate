@@ -5,6 +5,7 @@ const mode = process.env.NODE_ENV || 'development';
 const prod = mode === 'production';
 
 module.exports = {
+  mode,
   entry: {
     'build/bundle': ['./src/main.ts'],
   },
@@ -88,7 +89,6 @@ module.exports = {
       },
     ],
   },
-  mode,
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].css',
@@ -99,4 +99,5 @@ module.exports = {
     hot: true,
     historyApiFallback: true,
   },
+  performance: false
 };
