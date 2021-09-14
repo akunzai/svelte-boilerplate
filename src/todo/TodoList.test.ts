@@ -6,13 +6,19 @@ import {
   waitForElementToBeRemoved,
 } from '@testing-library/svelte';
 import userEvent from '@testing-library/user-event';
+import html from 'svelte-htm';
 import '../i18nForTests';
 import { rest, server } from '../mocks/server';
 import Todo from './Todo';
-import TodoList from './TodoList.test.svelte';
+import { Router } from 'svelte-navigator';
+import TodoList from './TodoList.svelte';
 
 beforeEach(async () => {
-  render(TodoList);
+  render(
+    html`<${Router}>
+      <${TodoList} />
+    <//>`
+  );
   await waitFor(() => expect(screen.getAllByRole('link').length).toBe(3));
 });
 
