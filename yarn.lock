@@ -6692,7 +6692,7 @@ __metadata:
     svelte-forms-lib: 1.10.7
     svelte-htm: 1.1.1
     svelte-i18n: 3.3.10
-    svelte-jester: 1.8.2
+    svelte-jester: 2.1.2
     svelte-loader: 3.1.2
     svelte-navigator: 3.1.5
     svelte-preprocess: 4.9.4
@@ -6806,13 +6806,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-jester@npm:1.8.2":
-  version: 1.8.2
-  resolution: "svelte-jester@npm:1.8.2"
+"svelte-jester@npm:2.1.2":
+  version: 2.1.2
+  resolution: "svelte-jester@npm:2.1.2"
   peerDependencies:
-    jest: <= 26
+    jest: ">= 27"
     svelte: ">= 3"
-  checksum: bdccf8e0e8dce73f21e28865c2a86c60831ca2e74f089b0aee4ca123fd64889a22ff9eab3b05539eebab2722a9117d66b2d1e4821018abee4b688209b0f3216a
+  checksum: 15c0b31d755d053db9d612a84d80bf91fd2350ef83594ab9a41df7dda22479b7e7308ea31cadebef83ffc539525dd1ed277bfc2e4d280c1bcf4b8e927503391e
   languageName: node
   linkType: hard
 
