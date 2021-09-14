@@ -2600,6 +2600,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dequal@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "dequal@npm:2.0.2"
+  checksum: 86c7a2c59f7b0797ed397c74b5fcdb744e48fc19440b70ad6ac59f57550a96b0faef3f1cfd5760ec5e6d3f7cb101f634f1f80db4e727b1dc8389bf62d977c0a0
+  languageName: node
+  linkType: hard
+
 "destroy@npm:~1.0.4":
   version: 1.0.4
   resolution: "destroy@npm:1.0.4"
@@ -6668,6 +6675,7 @@ __metadata:
     sass-loader: 12.1.0
     svelte: 3.39.0
     svelte-check: 2.2.6
+    svelte-forms-lib: ^1.10.7
     svelte-i18n: 3.3.10
     svelte-jester: 1.8.2
     svelte-loader: 3.1.2
@@ -6709,6 +6717,15 @@ __metadata:
   version: 1.1.9
   resolution: "svelte-dev-helper@npm:1.1.9"
   checksum: 78a8ed951d88f5d59834ea5cafb82658c20388df03997a679f23d56148f6fb68d7d980f9092e374619e7d93b50ebb98f5185b20ad3954bba5d09372d491b6ec6
+  languageName: node
+  linkType: hard
+
+"svelte-forms-lib@npm:^1.10.7":
+  version: 1.10.7
+  resolution: "svelte-forms-lib@npm:1.10.7"
+  dependencies:
+    dequal: ^2.0.2
+  checksum: 79e22e92d592387d3a8a27773f4eee0b9cac78d9a5606b84cfe7fb72215c6ad733c616a89a0970db378c5bafffe311048c42e0854f40e549829f186d2aa28c45
   languageName: node
   linkType: hard
 
