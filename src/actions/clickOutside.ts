@@ -14,4 +14,4 @@ const clickOutside = (node: HTMLElement) => {
       },
     };
   };
-export default clickOutside;
+export { clickOutside };

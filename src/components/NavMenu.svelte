@@ -2,7 +2,7 @@
   import { locale } from 'svelte-i18n';
   import { Link } from 'svelte-navigator';
   import { get } from 'svelte/store';
-  import clickOutside from './clickOutside';
+  import { clickOutside } from '../actions';
 
   export let title: string;
   let collapsed = true;
