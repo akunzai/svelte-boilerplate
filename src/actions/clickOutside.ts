@@ -1,17 +1,28 @@
-// https://svelte.dev/repl/0ace7a508bd843b798ae599940a91783
-const clickOutside = (node: HTMLElement) => {
-    const handleClick = (e: MouseEvent) => {
-      if (node && !node.contains(e.target as Node) && !e.defaultPrevented) {
-        node.dispatchEvent(
-          new CustomEvent('click_outside', node as CustomEventInit)
-        );
-      }
-    };
-    document.addEventListener('click', handleClick, true);
-    return {
-      destroy() {
-        document.removeEventListener('click', handleClick, true);
-      },
-    };
+// https://svelte.dev/repl/dae848c2157e48ab932106779960f5d5
+import type { Action } from './types';
+
+export function clickOutside(
+  node: HTMLElement,
+  params: { enabled: boolean; cb: Function }
+): ReturnType<Action> {
+  const { enabled: initialEnabled, cb } = params;
+
+  const handleOutsideClick = ({ target }: MouseEvent) => {
+    if (!node.contains(target as Node)) cb();
   };
-export { clickOutside };
+
+  function update({ enabled }: { enabled: boolean }) {
+    if (enabled) {
+      window.addEventListener('click', handleOutsideClick);
+    } else {
+      window.removeEventListener('click', handleOutsideClick);
+    }
+  }
+  update({ enabled: initialEnabled });
+  return {
+    update,
+    destroy() {
+      window.removeEventListener('click', handleOutsideClick);
+    },
+  };
+}
