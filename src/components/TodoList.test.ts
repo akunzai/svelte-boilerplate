@@ -3,14 +3,14 @@ import {
   render,
   screen,
   waitFor,
-  waitForElementToBeRemoved,
+  waitForElementToBeRemoved
 } from '@testing-library/svelte';
 import userEvent from '@testing-library/user-event';
 import html from 'svelte-htm';
+import { Router } from 'svelte-navigator';
+import { Todo } from '../api';
 import '../i18nForTests';
 import { rest, server } from '../mocks/server';
-import Todo from './Todo';
-import { Router } from 'svelte-navigator';
 import TodoList from './TodoList.svelte';
 
 beforeEach(async () => {

@@ -2,14 +2,14 @@
   import { locale } from 'svelte-i18n';
   import { Link } from 'svelte-navigator';
   import { get } from 'svelte/store';
-  import clickOutside from './clickOutside';
+  import { clickOutside } from '../actions';
 
   export let title: string;
   let collapsed = true;
   let expanded = false;
 
   locale.subscribe((lang) => {
-    localStorage.setItem('locale',lang);
+    localStorage.setItem('locale', lang);
   });
 
   const isCurrentLanguage = (pattern: RegExp): boolean => {
@@ -69,9 +69,11 @@
             </button>
             {#if expanded}
               <ul
-                use:clickOutside
-                on:click_outside={() => {
-                  expanded = false;
+                use:clickOutside={{
+                  enabled: !expanded,
+                  cb: () => {
+                    expanded = false;
+                  },
                 }}
                 class={`dropdown-menu ${expanded ? 'show' : ''}`}
                 aria-labelledby="i18nDropdown"

@@ -1,10 +1,10 @@
 <script lang="ts">
   import { Route,Router } from 'svelte-navigator';
-  import Home from './common/Home.svelte';
-  import NavMenu from './common/NavMenu.svelte';
-  import Counter from './counter/Counter.svelte';
-  import TodoDetail from './todo/TodoDetail.svelte';
-  import TodoList from './todo/TodoList.svelte';
+  import Home from './components/Home.svelte';
+  import NavMenu from './components/NavMenu.svelte';
+  import Counter from './components/Counter.svelte';
+  import TodoDetail from './components/TodoDetail.svelte';
+  import TodoList from './components/TodoList.svelte';
 </script>
 
 <Router primary={false}>

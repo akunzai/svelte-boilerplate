@@ -2,8 +2,7 @@
   import { onMount } from 'svelte';
   import { createForm } from 'svelte-forms-lib';
   import { _ } from 'svelte-i18n';
-  import Todo from './Todo';
-  import TodoService from './TodoService';
+  import { Todo,TodoService } from '../api';
 
   const todoService = new TodoService();
   export let id: string;
