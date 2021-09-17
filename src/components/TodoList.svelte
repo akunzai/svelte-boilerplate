@@ -2,7 +2,8 @@
   import { onMount } from 'svelte';
   import { _ } from 'svelte-i18n';
   import { Link } from 'svelte-navigator';
-  import { Todo,TodoService } from '../api';
+  import { TodoService } from '../api';
+  import type { Todo } from '../types';
 
   const todoService = new TodoService();
   let todos = [];

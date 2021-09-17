@@ -1,6 +1,6 @@
 import { catchError, map, Observable, of, switchMap } from 'rxjs';
 import { fromFetch } from 'rxjs/fetch';
-import type { Todo } from './Todo';
+import type { Todo } from '../types';
 
 const HEADERS = new Headers({
   'Content-Type': 'application/json',

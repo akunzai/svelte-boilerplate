@@ -1,7 +1,7 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/svelte';
-import TodoDetail from './TodoDetail.svelte';
 import userEvent from '@testing-library/user-event';
 import '../i18nForTests';
+import TodoDetail from './TodoDetail.svelte';
 
 beforeAll(() => {
   jest.spyOn(global.console, 'error').mockImplementation(() => undefined);
