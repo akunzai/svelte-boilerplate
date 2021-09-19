@@ -2,7 +2,7 @@ import './main.scss';
 import './i18n';
 
 // Start the mocking conditionally.
-if (process.env.NODE_ENV === 'development') {
+if (process.env.MOCK === 'true') {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
   const { worker } = require('./mocks/browser');
   worker.start();
