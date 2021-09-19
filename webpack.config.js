@@ -95,7 +95,6 @@ module.exports = {
       filename: '[name].css',
     }),
     new webpack.EnvironmentPlugin({
-      NODE_ENV: mode,
       MOCK: false,
     }),
   ],
