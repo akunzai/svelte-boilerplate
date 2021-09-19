@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
-    "start": "webpack serve --static-directory public",
+    "start": "cross-env MOCK=true webpack serve --static-directory public",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
