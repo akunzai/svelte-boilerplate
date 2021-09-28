@@ -27,7 +27,7 @@
     "bootstrap-icons": "1.5.0",
     "cross-env": "7.0.3",
     "css-loader": "6.3.0",
-    "jest": "27.2.2",
+    "jest": "27.2.3",
     "mini-css-extract-plugin": "2.3.0",
     "msw": "0.35.0",
     "sass": "1.42.1",
