@@ -1142,7 +1142,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:^7.15.6":
+"@babel/preset-env@npm:7.15.6":
   version: 7.15.6
   resolution: "@babel/preset-env@npm:7.15.6"
   dependencies:
@@ -2563,7 +2563,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-jest@npm:^27.2.4":
+"babel-jest@npm:27.2.4, babel-jest@npm:^27.2.4":
   version: 27.2.4
   resolution: "babel-jest@npm:27.2.4"
   dependencies:
@@ -7767,14 +7767,14 @@ __metadata:
   resolution: "svelte-boilerplate@workspace:."
   dependencies:
     "@babel/plugin-transform-react-jsx": 7.14.9
-    "@babel/preset-env": ^7.15.6
+    "@babel/preset-env": 7.15.6
     "@testing-library/jest-dom": 5.14.1
     "@testing-library/svelte": 3.0.3
     "@testing-library/user-event": 13.2.1
     "@tsconfig/svelte": 2.0.1
     "@types/jest": 27.0.2
     "@types/node": 16.10.2
-    babel-jest: ^27.2.4
+    babel-jest: 27.2.4
     bootstrap: 5.1.1
     bootstrap-icons: 1.5.0
     cross-env: 7.0.3
@@ -7790,7 +7790,7 @@ __metadata:
     svelte-forms-lib: 1.10.7
     svelte-i18n: 3.3.12
     svelte-jester: 2.1.5
-    svelte-jsx: ^2.0.0
+    svelte-jsx: 2.0.0
     svelte-loader: 3.1.2
     svelte-preprocess: 4.9.7
     svelte-routing: 1.6.0
@@ -7899,7 +7899,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-jsx@npm:^2.0.0":
+"svelte-jsx@npm:2.0.0":
   version: 2.0.0
   resolution: "svelte-jsx@npm:2.0.0"
   dependencies:
