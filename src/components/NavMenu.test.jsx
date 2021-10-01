@@ -1,15 +1,14 @@
 import { fireEvent, render, screen } from '@testing-library/svelte';
-import html from 'svelte-htm';
 import { Router } from 'svelte-routing';
 import '../i18nForTests';
 import NavMenu from './NavMenu.svelte';
 
 beforeEach(() => {
-  render(html`
-    <${Router}>
-      <${NavMenu} title=${'Test'} />
-    <//>
-  `);
+  render(
+    <Router>
+      <NavMenu title={'Test'}/>
+    </Router>
+    );
 });
 
 test('should render with title: Test', () => {

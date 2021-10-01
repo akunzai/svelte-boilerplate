@@ -1,11 +1,5 @@
 /** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
-  preset: 'ts-jest',
-  globals: {
-    'ts-jest': {
-      tsconfig: '<rootDir>/tsconfig.spec.json',
-    },
-  },
   testEnvironment: 'jsdom',
   transform: {
     '^.+\\.svelte$': [
@@ -14,8 +8,16 @@ module.exports = {
         preprocess: true,
       },
     ],
+    '^.+\\.jsx?$': 'babel-jest',
+    '^.+\\.ts$': [
+      'ts-jest',
+      {
+        tsconfig: '<rootDir>/tsconfig.jest.json',
+      },
+    ],
   },
-  moduleFileExtensions: ['ts', 'js', 'svelte'],
+  transformIgnorePatterns: ['node_modules/(?!svelte-routing)'],
+  moduleFileExtensions: ['ts', 'js', 'jsx', 'svelte'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   collectCoverageFrom: [
     'src/**/*.{ts,svelte}',
