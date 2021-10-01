@@ -1080,10 +1080,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.7.13":
-  version: 16.7.13
-  resolution: "@types/node@npm:16.7.13"
-  checksum: 15dc28aa44674d3f49dcca4a6523b6ab1ef9bbea5c659057bec13153e1873718d6b62ab0ea57a3d57ee37f0f1136ae30e3ea503df43b0afa3ae437c8750be7f5
+"@types/node@npm:16.10.2":
+  version: 16.10.2
+  resolution: "@types/node@npm:16.10.2"
+  checksum: 83c1c3c68e7500103908c3f16094e458879c840a719c15b6ea577f81fe1f24a1b3473bb6c8e8091fe79a82543ca7639c6b1088fcf80292ec091d1d1c9504a87e
   languageName: node
   linkType: hard
 
@@ -6702,7 +6702,7 @@ __metadata:
     "@testing-library/user-event": 13.2.1
     "@tsconfig/svelte": 2.0.1
     "@types/jest": 27.0.2
-    "@types/node": 16.7.13
+    "@types/node": 16.10.2
     bootstrap: 5.1.1
     bootstrap-icons: 1.5.0
     cross-env: 7.0.3
