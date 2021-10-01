@@ -12,7 +12,7 @@
     "i18n:extract": "svelte-i18n extract 'src/**/*.svelte'"
   },
   "dependencies": {
-    "rxjs": "7.3.0",
+    "rxjs": "7.3.1",
     "svelte-routing": "1.6.0",
     "whatwg-fetch": "3.6.2"
   },
