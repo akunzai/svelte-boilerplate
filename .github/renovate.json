@@ -1,4 +1,3 @@
 {
-  "extends": ["config:base"],
-  "ignoreDeps": ["svelte"]
+  "extends": ["config:base"]
 }

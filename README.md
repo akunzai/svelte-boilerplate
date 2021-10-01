@@ -39,7 +39,7 @@ yarn i18n:extract src/locales/zh-Hant.json
 - [Svelte Rollup Template](https://github.com/sveltejs/template)
 - [Svelte Webpack Template](https://github.com/sveltejs/template-webpack)
 - [Svelte Preprocess](https://github.com/sveltejs/svelte-preprocess)
-- [Svelte Navigator](https://github.com/mefechoel/svelte-navigator)
+- [Svelte Routing](https://github.com/EmilTholin/svelte-routing)
 - [Svelte i18n Library](https://github.com/kaisermann/svelte-i18n)
 - [Svelte Forms Library](https://github.com/tjinauyeung/svelte-forms-lib)
 - [Svelte Jest Transformer](https://github.com/mihar-22/svelte-jester)

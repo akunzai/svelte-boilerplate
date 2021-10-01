@@ -6,8 +6,7 @@ import {
   waitForElementToBeRemoved
 } from '@testing-library/svelte';
 import userEvent from '@testing-library/user-event';
-import html from 'svelte-htm';
-import { Router } from 'svelte-navigator';
+import { Router } from 'svelte-routing';
 import '../i18nForTests';
 import { rest, server } from '../mocks/server';
 import { Todo } from '../types';
@@ -15,9 +14,9 @@ import TodoList from './TodoList.svelte';
 
 beforeEach(async () => {
   render(
-    html`<${Router}>
-      <${TodoList} />
-    <//>`
+    <Router>
+      <TodoList />
+    </Router>
   );
   await waitFor(() => expect(screen.getAllByRole('link').length).toBe(3));
 });
@@ -32,9 +31,7 @@ test('should renders as expected', () => {
   expect(links[2].textContent).toContain('Buy eggs');
   expect(links[2].getAttribute('href')).toBe('/todo/3');
 
-  const inputs = screen
-    .getAllByRole('checkbox')
-    .map((x) => x as HTMLInputElement);
+  const inputs = screen.getAllByRole('checkbox');
   expect(inputs.length).toBe(3);
   expect(inputs[0].checked).toBeTruthy();
   expect(inputs[1].checked).toBeFalsy();
