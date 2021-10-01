@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/svelte';
 import html from 'svelte-htm';
-import { Router } from 'svelte-navigator';
+import { Router } from 'svelte-routing';
 import '../i18nForTests';
 import NavMenu from './NavMenu.svelte';
 

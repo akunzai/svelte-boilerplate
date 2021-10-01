@@ -7,7 +7,7 @@ import {
 } from '@testing-library/svelte';
 import userEvent from '@testing-library/user-event';
 import html from 'svelte-htm';
-import { Router } from 'svelte-navigator';
+import { Router } from 'svelte-routing';
 import '../i18nForTests';
 import { rest, server } from '../mocks/server';
 import { Todo } from '../types';

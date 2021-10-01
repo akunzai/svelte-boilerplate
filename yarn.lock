@@ -6720,8 +6720,8 @@ __metadata:
     svelte-i18n: 3.3.12
     svelte-jester: 2.1.5
     svelte-loader: 3.1.2
-    svelte-navigator: 3.1.5
     svelte-preprocess: 4.9.7
+    svelte-routing: 1.6.0
     ts-jest: 27.0.5
     ts-loader: 9.2.6
     tslib: 2.3.1
@@ -6855,17 +6855,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-navigator@npm:3.1.5":
-  version: 3.1.5
-  resolution: "svelte-navigator@npm:3.1.5"
-  dependencies:
-    svelte2tsx: ^0.1.151
-  peerDependencies:
-    svelte: 3.x
-  checksum: 1c728d6a0bea5d5766455deb81e328915eb6cdb8d22bf0510db956be2e45f36e2e81634b4488d28fe91ba08390ee22029cc9a5e09f106059daeaa3156a372856
-  languageName: node
-  linkType: hard
-
 "svelte-preprocess@npm:4.9.7":
   version: 4.9.7
   resolution: "svelte-preprocess@npm:4.9.7"
@@ -6964,7 +6953,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte2tsx@npm:^0.1.151":
+"svelte-routing@npm:1.6.0":
+  version: 1.6.0
+  resolution: "svelte-routing@npm:1.6.0"
+  dependencies:
+    svelte2tsx: ^0.1.157
+  peerDependencies:
+    svelte: ^3.20.x
+  checksum: 8c8668ad91e24eb3abfdf9676568b45a9258ee9e1097de2b3333e775a598e20c8bcaf55161ae7e881b4fe960fb165dd04cc86090da4b5a69a42edbfbcdcc5149
+  languageName: node
+  linkType: hard
+
+"svelte2tsx@npm:^0.1.157":
   version: 0.1.193
   resolution: "svelte2tsx@npm:0.1.193"
   dependencies:

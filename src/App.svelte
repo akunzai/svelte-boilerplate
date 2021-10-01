@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { Route, Router } from 'svelte-navigator';
+  import { Route, Router } from 'svelte-routing';
   import Counter from './components/Counter.svelte';
   import Home from './components/Home.svelte';
   import NavMenu from './components/NavMenu.svelte';
@@ -7,7 +7,7 @@
   import TodoList from './components/TodoList.svelte';
 </script>
 
-<Router primary={false}>
+<Router>
   <NavMenu title={document.title} />
   <main class="container">
     <Route path="/counter" component={Counter} />
