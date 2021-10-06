@@ -365,16 +365,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-async-generator-functions@npm:^7.15.4":
-  version: 7.15.4
-  resolution: "@babel/plugin-proposal-async-generator-functions@npm:7.15.4"
+"@babel/plugin-proposal-async-generator-functions@npm:^7.15.8":
+  version: 7.15.8
+  resolution: "@babel/plugin-proposal-async-generator-functions@npm:7.15.8"
   dependencies:
     "@babel/helper-plugin-utils": ^7.14.5
     "@babel/helper-remap-async-to-generator": ^7.15.4
     "@babel/plugin-syntax-async-generators": ^7.8.4
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 23fdc2b4fe7482ee4d4de31da5433d660cd7251a417d3a99826f69d8684db2225b640afc16b4014a55ee737eb0e966357f4063ad0128893c6f54e24ffe0318bd
+  checksum: d3b9840a69de3b9f336540000bd785ade25800f893821e0986b647eed92bd820bc2486563d48d6a76de66b62d0adb598dea4fcf5f248420707b5a3d2b7212b36
   languageName: node
   linkType: hard
 
@@ -1074,15 +1074,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-spread@npm:^7.14.6":
-  version: 7.14.6
-  resolution: "@babel/plugin-transform-spread@npm:7.14.6"
+"@babel/plugin-transform-spread@npm:^7.15.8":
+  version: 7.15.8
+  resolution: "@babel/plugin-transform-spread@npm:7.15.8"
   dependencies:
     "@babel/helper-plugin-utils": ^7.14.5
-    "@babel/helper-skip-transparent-expression-wrappers": ^7.14.5
+    "@babel/helper-skip-transparent-expression-wrappers": ^7.15.4
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 20c11de962dd7ddab110d6c4ab9f3c0bea97393ce09cbe4e46be53182c3df0577eaf0e31aaa2d76344ae21ed3a3b7e779fe814b845d188e11a6031c619648b89
+  checksum: fbffa4f2a6dd630ab5f22d1e66e77a0043d83b16ef97418fb389584d4c29c218096da7def69fc3b3e8e9092db8de236b5e15ebe5467d0a28bf59eda1318ad41d
   languageName: node
   linkType: hard
 
@@ -1142,16 +1142,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:7.15.6":
-  version: 7.15.6
-  resolution: "@babel/preset-env@npm:7.15.6"
+"@babel/preset-env@npm:7.15.8":
+  version: 7.15.8
+  resolution: "@babel/preset-env@npm:7.15.8"
   dependencies:
     "@babel/compat-data": ^7.15.0
     "@babel/helper-compilation-targets": ^7.15.4
     "@babel/helper-plugin-utils": ^7.14.5
     "@babel/helper-validator-option": ^7.14.5
     "@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining": ^7.15.4
-    "@babel/plugin-proposal-async-generator-functions": ^7.15.4
+    "@babel/plugin-proposal-async-generator-functions": ^7.15.8
     "@babel/plugin-proposal-class-properties": ^7.14.5
     "@babel/plugin-proposal-class-static-block": ^7.15.4
     "@babel/plugin-proposal-dynamic-import": ^7.14.5
@@ -1206,7 +1206,7 @@ __metadata:
     "@babel/plugin-transform-regenerator": ^7.14.5
     "@babel/plugin-transform-reserved-words": ^7.14.5
     "@babel/plugin-transform-shorthand-properties": ^7.14.5
-    "@babel/plugin-transform-spread": ^7.14.6
+    "@babel/plugin-transform-spread": ^7.15.8
     "@babel/plugin-transform-sticky-regex": ^7.14.5
     "@babel/plugin-transform-template-literals": ^7.14.5
     "@babel/plugin-transform-typeof-symbol": ^7.14.5
@@ -1215,13 +1215,13 @@ __metadata:
     "@babel/preset-modules": ^0.1.4
     "@babel/types": ^7.15.6
     babel-plugin-polyfill-corejs2: ^0.2.2
-    babel-plugin-polyfill-corejs3: ^0.2.2
+    babel-plugin-polyfill-corejs3: ^0.2.5
     babel-plugin-polyfill-regenerator: ^0.2.2
     core-js-compat: ^3.16.0
     semver: ^6.3.0
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 096902ac397b6ab53bd6c03c59cc451d98b407d1863c185837f0cb56ff45414aa08ae6b950ef179c66a30c0680d4d1846cda0766a990f850ee477022353daf5b
+  checksum: 1d38e941772c394bfc5ab127132d40a084f0958b7529ca5c336e7136623e8cecd1a74ccab25b369e25a37fcf7db2484de52d8ceeb7b58104a05f9e2242bbb5a2
   languageName: node
   linkType: hard
 
@@ -2628,7 +2628,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-plugin-polyfill-corejs3@npm:^0.2.2":
+"babel-plugin-polyfill-corejs3@npm:^0.2.5":
   version: 0.2.5
   resolution: "babel-plugin-polyfill-corejs3@npm:0.2.5"
   dependencies:
@@ -7776,7 +7776,7 @@ __metadata:
   resolution: "svelte-boilerplate@workspace:."
   dependencies:
     "@babel/plugin-transform-react-jsx": 7.14.9
-    "@babel/preset-env": 7.15.6
+    "@babel/preset-env": 7.15.8
     "@testing-library/jest-dom": 5.14.1
     "@testing-library/svelte": 3.0.3
     "@testing-library/user-event": 13.2.1
