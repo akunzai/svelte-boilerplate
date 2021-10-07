@@ -6,9 +6,9 @@ import NavMenu from './NavMenu.svelte';
 beforeEach(() => {
   render(
     <Router>
-      <NavMenu title={'Test'}/>
+      <NavMenu title={'Test'} />
     </Router>
-    );
+  );
 });
 
 test('should render with title: Test', () => {
@@ -16,7 +16,7 @@ test('should render with title: Test', () => {
 });
 
 test('support to toggle navigation', async () => {
-  const navbar = screen.getByTestId('navbar-collapse');
+  const navbar = screen.getByRole('menu');
   expect(navbar.getAttribute('class')).not.toContain('show');
   await fireEvent.click(
     screen.getByRole('button', { name: /Toggle navigation/i })

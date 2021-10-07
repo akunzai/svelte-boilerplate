@@ -43,7 +43,7 @@
         class={`navbar-collapse collapse d-sm-inline-flex justify-content-end ${
           collapsed ? '' : 'show'
         }`}
-        data-testid="navbar-collapse"
+        role="menu"
       >
         <ul class="navbar-nav flex-grow">
           <li class="nav-item">
