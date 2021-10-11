@@ -7805,7 +7805,7 @@ __metadata:
     svelte: 3.43.1
     svelte-check: 2.2.7
     svelte-forms-lib: 1.10.7
-    svelte-i18n: 3.3.12
+    svelte-i18n: 3.3.13
     svelte-jester: 2.1.5
     svelte-jsx: 2.0.0
     svelte-loader: 3.1.2
@@ -7889,9 +7889,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-i18n@npm:3.3.12":
-  version: 3.3.12
-  resolution: "svelte-i18n@npm:3.3.12"
+"svelte-i18n@npm:3.3.13":
+  version: 3.3.13
+  resolution: "svelte-i18n@npm:3.3.13"
   dependencies:
     deepmerge: ^4.2.2
     estree-walker: ^2.0.1
@@ -7902,7 +7902,7 @@ __metadata:
     svelte: ^3.25.1
   bin:
     svelte-i18n: dist/cli.js
-  checksum: cdb4bc6a133567ccceb0a9d5bbf3d3c48678d8f807ffa7367dcfa3fb770fc705c454debe8205ef8cf54c3ab8f17e5a549b85b3ad73049edaea547b8470a303a3
+  checksum: ee2b62780b1ea0d669a73c54a1a913faede8a5cc591d074f8a75243b2e94fbd2a3fdf2372096b17e91933af40b93258fb1144fe50e045b7252768371f83d0963
   languageName: node
   linkType: hard
 
