@@ -34,7 +34,7 @@
     "mini-css-extract-plugin": "2.4.2",
     "msw": "0.35.0",
     "sass": "1.42.1",
-    "sass-loader": "12.1.0",
+    "sass-loader": "12.2.0",
     "svelte": "3.43.1",
     "svelte-check": "2.2.7",
     "svelte-forms-lib": "1.10.7",
