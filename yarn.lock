@@ -7809,7 +7809,7 @@ __metadata:
     rxjs: 7.4.0
     sass: 1.43.2
     sass-loader: 12.2.0
-    svelte: 3.43.2
+    svelte: 3.44.0
     svelte-check: 2.2.7
     svelte-forms-lib: 1.10.7
     svelte-i18n: 3.3.13
@@ -8072,10 +8072,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:3.43.2":
-  version: 3.43.2
-  resolution: "svelte@npm:3.43.2"
-  checksum: fe0162be9b13e115607dfbee8b83a50f1156f4c82269fae192cf1f68eaaf5757f44d5c3851527710775f1be3656ee0d042d65ac97ad5c40659768154628f986c
+"svelte@npm:3.44.0":
+  version: 3.44.0
+  resolution: "svelte@npm:3.44.0"
+  checksum: f02a9b5aa27f40c4b5bde8f44b4357c8da4ca4c0009b3c5b41ed556cf34bd0c5bcdeb5023dac71374926b1158a5ead314f96a75292d9b310e1d3f98f0284f712
   languageName: node
   linkType: hard
 
