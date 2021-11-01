@@ -35,7 +35,7 @@
     "msw": "0.35.0",
     "sass": "1.43.4",
     "sass-loader": "12.3.0",
-    "svelte": "3.44.0",
+    "svelte": "3.44.1",
     "svelte-check": "2.2.8",
     "svelte-forms-lib": "1.10.7",
     "svelte-i18n": "3.3.13",
