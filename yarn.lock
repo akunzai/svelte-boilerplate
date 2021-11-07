@@ -8067,7 +8067,7 @@ __metadata:
     sass-loader: 12.3.0
     svelte: 3.44.1
     svelte-check: 2.2.8
-    svelte-forms-lib: 1.10.7
+    svelte-forms-lib: 1.10.10
     svelte-i18n: 3.3.13
     svelte-jester: 2.1.5
     svelte-jsx: 2.0.0
@@ -8113,12 +8113,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-forms-lib@npm:1.10.7":
-  version: 1.10.7
-  resolution: "svelte-forms-lib@npm:1.10.7"
+"svelte-forms-lib@npm:1.10.10":
+  version: 1.10.10
+  resolution: "svelte-forms-lib@npm:1.10.10"
   dependencies:
     dequal: ^2.0.2
-  checksum: 79e22e92d592387d3a8a27773f4eee0b9cac78d9a5606b84cfe7fb72215c6ad733c616a89a0970db378c5bafffe311048c42e0854f40e549829f186d2aa28c45
+  checksum: 3693a8f520f3b27e03fe6ebbc95ea4e021a3eb2a1c6be53963371ecb777365a5871e62aac85126d96814f7ee7c7a3b4426f2d4d183f6f95b657c34bf338bd018
   languageName: node
   linkType: hard
 
