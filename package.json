@@ -36,7 +36,7 @@
     "sass": "1.43.4",
     "sass-loader": "12.3.0",
     "svelte": "3.44.1",
-    "svelte-check": "2.2.8",
+    "svelte-check": "2.2.9",
     "svelte-forms-lib": "2.0.0",
     "svelte-i18n": "3.3.13",
     "svelte-jester": "2.1.5",
