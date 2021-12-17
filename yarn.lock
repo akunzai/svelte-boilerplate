@@ -7594,7 +7594,7 @@ __metadata:
     svelte-jester: 2.1.5
     svelte-jsx: 2.0.0
     svelte-loader: 3.1.2
-    svelte-preprocess: 4.10.0
+    svelte-preprocess: 4.10.1
     svelte-routing: 1.6.0
     ts-jest: 27.1.2
     ts-loader: 9.2.6
@@ -7728,7 +7728,56 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-preprocess@npm:4.10.0, svelte-preprocess@npm:^4.0.0":
+"svelte-preprocess@npm:4.10.1":
+  version: 4.10.1
+  resolution: "svelte-preprocess@npm:4.10.1"
+  dependencies:
+    "@types/pug": ^2.0.4
+    "@types/sass": ^1.16.0
+    detect-indent: ^6.0.0
+    magic-string: ^0.25.7
+    sorcery: ^0.10.0
+    strip-indent: ^3.0.0
+  peerDependencies:
+    "@babel/core": ^7.10.2
+    coffeescript: ^2.5.1
+    less: ^3.11.3
+    postcss: ^7 || ^8
+    postcss-load-config: ^2.1.0 || ^3.0.0
+    pug: ^3.0.0
+    sass: ^1.26.8
+    stylus: ^0.54.7
+    sugarss: ^2.0.0
+    svelte: ^3.23.0
+    typescript: ^4.5.2
+  peerDependenciesMeta:
+    "@babel/core":
+      optional: true
+    coffeescript:
+      optional: true
+    less:
+      optional: true
+    node-sass:
+      optional: true
+    postcss:
+      optional: true
+    postcss-load-config:
+      optional: true
+    pug:
+      optional: true
+    sass:
+      optional: true
+    stylus:
+      optional: true
+    sugarss:
+      optional: true
+    typescript:
+      optional: true
+  checksum: bbec2ce6a4b47488ed09d152d10cf3800127c3600277eb70616ec90910af3ac22cb1d58da8be45050c01433d40b6416088ba49c4265c9c92cbd1a2e7e8362d48
+  languageName: node
+  linkType: hard
+
+"svelte-preprocess@npm:^4.0.0":
   version: 4.10.0
   resolution: "svelte-preprocess@npm:4.10.0"
   dependencies:
