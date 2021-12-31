@@ -17,8 +17,8 @@
     "whatwg-fetch": "3.6.2"
   },
   "devDependencies": {
-    "@babel/plugin-transform-react-jsx": "7.16.5",
-    "@babel/preset-env": "7.16.5",
+    "@babel/plugin-transform-react-jsx": "7.16.7",
+    "@babel/preset-env": "7.16.7",
     "@testing-library/jest-dom": "5.16.1",
     "@testing-library/svelte": "3.0.3",
     "@testing-library/user-event": "13.5.0",
