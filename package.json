@@ -33,7 +33,7 @@
     "jest": "27.4.7",
     "mini-css-extract-plugin": "2.4.6",
     "msw": "0.36.3",
-    "sass": "1.46.0",
+    "sass": "1.47.0",
     "sass-loader": "12.4.0",
     "svelte": "3.45.0",
     "svelte-check": "2.2.11",
