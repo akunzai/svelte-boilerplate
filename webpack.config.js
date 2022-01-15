@@ -1,4 +1,4 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { default: MiniCssExtractPlugin } = require('mini-css-extract-plugin');
 const path = require('path');
 const webpack = require('webpack');
 const sveltePreprocess = require('svelte-preprocess');
