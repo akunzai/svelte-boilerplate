@@ -1405,9 +1405,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:7.16.8":
-  version: 7.16.8
-  resolution: "@babel/preset-env@npm:7.16.8"
+"@babel/preset-env@npm:7.16.10":
+  version: 7.16.10
+  resolution: "@babel/preset-env@npm:7.16.10"
   dependencies:
     "@babel/compat-data": ^7.16.8
     "@babel/helper-compilation-targets": ^7.16.7
@@ -1485,7 +1485,7 @@ __metadata:
     semver: ^6.3.0
   peerDependencies:
     "@babel/core": ^7.0.0-0
-  checksum: 834fc0638b26e9a118a4deaac828ebb9cc17c4d1aa6497e6588003de1ff3768b1ee9bfddd055ccc6be526c65b92d5c463168da2425d26a53c836b38eeb3362cb
+  checksum: cd39d0c30a3b3d24f36ae4822e9368bc758c904039599ce26239932c0e0f537e8d3ec9b9e952ddb9f0a459d06254c138e71b89cee5be7709ef2a0890f503d915
   languageName: node
   linkType: hard
 
@@ -8043,7 +8043,7 @@ __metadata:
   resolution: "svelte-boilerplate@workspace:."
   dependencies:
     "@babel/plugin-transform-react-jsx": 7.16.7
-    "@babel/preset-env": 7.16.8
+    "@babel/preset-env": 7.16.10
     "@testing-library/jest-dom": 5.16.1
     "@testing-library/svelte": 3.0.3
     "@testing-library/user-event": 13.5.0
