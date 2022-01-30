@@ -52,6 +52,7 @@
     "webpack-dev-server": "4.7.3"
   },
   "resolutions": {
+    "follow-redirects": "^1.14.7",
     "nanoid": "^3.1.31"
   },
   "msw": {
