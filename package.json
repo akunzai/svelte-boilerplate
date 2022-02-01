@@ -39,7 +39,7 @@
     "svelte-check": "2.4.1",
     "svelte-forms-lib": "2.0.1",
     "svelte-i18n": "3.3.13",
-    "svelte-jester": "2.1.5",
+    "svelte-jester": "2.3.1",
     "svelte-jsx": "2.0.0",
     "svelte-loader": "3.1.2",
     "svelte-preprocess": "4.10.2",
