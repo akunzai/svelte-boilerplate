@@ -22,8 +22,9 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.{ts,svelte}',
     '!src/App.svelte',
-    '!src/main.ts',
     '!src/i18n*.ts',
+    '!src/main.ts',
+    '!src/types.ts',
     '!src/**/*.test.{ts,svelte}',
     '!src/**/*.d.ts',
     '!src/mocks/*.ts',
