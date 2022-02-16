@@ -8234,7 +8234,7 @@ __metadata:
     svelte-check: 2.4.5
     svelte-forms-lib: 2.0.1
     svelte-i18n: 3.3.13
-    svelte-jester: 2.3.1
+    svelte-jester: 2.3.2
     svelte-jsx: 2.0.0
     svelte-loader: 3.1.2
     svelte-preprocess: 4.10.3
@@ -8334,13 +8334,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-jester@npm:2.3.1":
-  version: 2.3.1
-  resolution: "svelte-jester@npm:2.3.1"
+"svelte-jester@npm:2.3.2":
+  version: 2.3.2
+  resolution: "svelte-jester@npm:2.3.2"
   peerDependencies:
     jest: ">= 27"
     svelte: ">= 3"
-  checksum: 8076062d671c399c6174a3b5280b49131bfb4c169911137d6fa76d4dfb626f1ce757a82620b66ac6246ab45d32660a368733c7eec7a1f85e68b9c956ceca894f
+  checksum: c8a02afbea8317f722884ffd2a66ff7ff2ca95e9f996a97a40f507156e4aac7b106215326db6f0be2813db66e84ec3e6dbc32728b22ca8ce82855cec208d2e0a
   languageName: node
   linkType: hard
 
