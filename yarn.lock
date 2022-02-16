@@ -8231,7 +8231,7 @@ __metadata:
     sass: 1.49.7
     sass-loader: 12.6.0
     svelte: 3.46.4
-    svelte-check: 2.4.4
+    svelte-check: 2.4.5
     svelte-forms-lib: 2.0.1
     svelte-i18n: 3.3.13
     svelte-jester: 2.3.1
@@ -8250,9 +8250,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"svelte-check@npm:2.4.4":
-  version: 2.4.4
-  resolution: "svelte-check@npm:2.4.4"
+"svelte-check@npm:2.4.5":
+  version: 2.4.5
+  resolution: "svelte-check@npm:2.4.5"
   dependencies:
     chokidar: ^3.4.1
     fast-glob: ^3.2.7
@@ -8267,7 +8267,7 @@ __metadata:
     svelte: ^3.24.0
   bin:
     svelte-check: bin/svelte-check
-  checksum: 9e2d3dfc62bf2fdd934ef69277718fb0c6c44f6e2dc29f02e34601d35f7bda4d06ef52c6e41d3a4493c0894c00fa6eed10ae6d1436dbedaf8588c8df7c79184d
+  checksum: 40d1e0d352da33136b023be0664af11aa074eb9c410aa36cc7a336bfef87a6fd8e2f24a34c4367ba4af52f7d4e7f032763b68fc9885d702c78b202d37c559758
   languageName: node
   linkType: hard
 
