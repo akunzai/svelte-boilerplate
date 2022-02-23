@@ -8226,7 +8226,7 @@ __metadata:
     svelte-jester: 2.3.2
     svelte-jsx: 2.0.0
     svelte-loader: 3.1.2
-    svelte-preprocess: 4.10.3
+    svelte-preprocess: 4.10.4
     svelte-routing: 1.6.0
     ts-jest: 27.1.3
     ts-loader: 9.2.6
@@ -8360,9 +8360,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-preprocess@npm:4.10.3":
-  version: 4.10.3
-  resolution: "svelte-preprocess@npm:4.10.3"
+"svelte-preprocess@npm:4.10.4":
+  version: 4.10.4
+  resolution: "svelte-preprocess@npm:4.10.4"
   dependencies:
     "@types/pug": ^2.0.4
     "@types/sass": ^1.16.0
@@ -8405,7 +8405,7 @@ __metadata:
       optional: true
     typescript:
       optional: true
-  checksum: 6efe8e56edc54d8817950cfc12068f0379feaa576ee9621931b710af18d1d86e931f041f716c31eb8b10dd620ba187894d6b262f0a0f89cc227b32cc61ebef5c
+  checksum: 323eca0fe691875b2b32a6c421aeb0aeee9e76050116e2d4de1bc027d8991ff150af3667b2880e5d3e19c80ff3fedaa70ff9c5e7b495a50acd5a268659578894
   languageName: node
   linkType: hard
 
