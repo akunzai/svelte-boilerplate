@@ -64,17 +64,17 @@
               data-bs-auto-close="true"
               aria-expanded={expanded}
               on:click={() => (expanded = !expanded)}
+              use:clickOutside={{
+                enabled: expanded,
+                cb: () => {
+                  expanded = false;
+                },
+              }}
             >
               <i class="bi bi-globe" />
             </button>
             {#if expanded}
               <ul
-                use:clickOutside={{
-                  enabled: !expanded,
-                  cb: () => {
-                    expanded = false;
-                  },
-                }}
                 class={`dropdown-menu ${expanded ? 'show' : ''}`}
                 aria-labelledby="i18nDropdown"
               >
