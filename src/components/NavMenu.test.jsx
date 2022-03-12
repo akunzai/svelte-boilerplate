@@ -33,6 +33,6 @@ test('support to switch languages', async () => {
   await fireEvent.click(
     screen.getByRole('button', { name: /Toggle Languages/i })
   );
-  await fireEvent.click(screen.getByRole('button', { name: /正體中文/i }));
+  await fireEvent.click(screen.getByRole('button', { name: /中文/i }));
   expect(localStorage.getItem('locale')).toBe('zh-Hant');
 });
