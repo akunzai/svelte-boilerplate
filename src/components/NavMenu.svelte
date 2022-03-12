@@ -95,7 +95,7 @@
                     }`}
                     on:click={() => changeLanguage('zh-Hant')}
                   >
-                    正體中文
+                    中文(繁體)
                   </button>
                 </li>
               </ul>
