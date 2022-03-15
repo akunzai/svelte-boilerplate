@@ -2102,14 +2102,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/svelte@npm:3.0.3":
-  version: 3.0.3
-  resolution: "@testing-library/svelte@npm:3.0.3"
+"@testing-library/svelte@npm:3.1.0":
+  version: 3.1.0
+  resolution: "@testing-library/svelte@npm:3.1.0"
   dependencies:
     "@testing-library/dom": ^7.0.3
   peerDependencies:
     svelte: 3.x
-  checksum: 8cd2fd443aa78e5c2ea7594b08f8aacea556092db3feacd8e0cc9b2618320b7be75564458e276e3583ff87d88db53c406d3a44e57e475d982c7ea8d6643d67f1
+  checksum: d864ea1f77ea94a67fa6394c8caaf3c61fccb7adf14e6e3682c1c822509105d9ff91f705525571054ab877b921f6fcb83b539bdd09a2118bcae3325bc0401fb2
   languageName: node
   linkType: hard
 
@@ -8203,7 +8203,7 @@ __metadata:
     "@babel/plugin-transform-react-jsx": 7.17.3
     "@babel/preset-env": 7.16.11
     "@testing-library/jest-dom": 5.16.2
-    "@testing-library/svelte": 3.0.3
+    "@testing-library/svelte": 3.1.0
     "@testing-library/user-event": 13.5.0
     "@tsconfig/svelte": 3.0.0
     "@types/jest": 27.4.1
