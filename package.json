@@ -52,6 +52,7 @@
     "webpack-dev-server": "4.8.1"
   },
   "resolutions": {
+    "async": "3.2.3",
     "follow-redirects": "1.14.9",
     "minimist": "1.2.6",
     "nanoid": "3.3.2",
