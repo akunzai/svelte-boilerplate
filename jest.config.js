@@ -1,20 +1,13 @@
-/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
   testEnvironment: 'jsdom',
   transform: {
-    '^.+\\.svelte$': [
+    '\\.svelte$': [
       'svelte-jester',
       {
         preprocess: true,
       },
     ],
-    '^.+\\.jsx?$': 'babel-jest',
-    '^.+\\.ts$': [
-      'ts-jest',
-      {
-        tsconfig: '<rootDir>/tsconfig.jest.json',
-      },
-    ],
+    '\\.[jt]sx?$': 'babel-jest',
   },
   transformIgnorePatterns: ['node_modules/(?!svelte-routing)'],
   moduleFileExtensions: ['ts', 'js', 'jsx', 'svelte'],
