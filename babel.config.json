@@ -1,9 +1,22 @@
 {
-  "presets": [["@babel/preset-env", { "targets": { "node": "current" } }]],
+  "presets": [
+    "@babel/preset-typescript",
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ],
   "plugins": [
     [
       "@babel/plugin-transform-react-jsx",
-      { "runtime": "automatic", "importSource": "svelte-jsx" }
+      {
+        "runtime": "automatic",
+        "importSource": "svelte-jsx"
+      }
     ]
   ]
 }
