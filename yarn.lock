@@ -1844,14 +1844,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/svelte@npm:3.1.1":
-  version: 3.1.1
-  resolution: "@testing-library/svelte@npm:3.1.1"
+"@testing-library/svelte@npm:3.1.2":
+  version: 3.1.2
+  resolution: "@testing-library/svelte@npm:3.1.2"
   dependencies:
     "@testing-library/dom": ^8.1.0
   peerDependencies:
     svelte: 3.x
-  checksum: 7bf2e4d29e3e36937671e8e971385c19b37ec16575dfb4aee1d07dbef4ed8aba7f1a100ff2aeea19c9892890593b5adfe24ff52ee1f0b72a0526a2701a39f3a0
+  checksum: 770050340e93f526669c6ed721fdc8e469fd6b749ef96638d53c8078733813a3c761b7a2fbdb9ea82052f70dcac930886fc480c937dc21c4a27ce97e4a95bdcd
   languageName: node
   linkType: hard
 
@@ -7573,7 +7573,7 @@ __metadata:
     "@babel/preset-env": 7.18.2
     "@babel/preset-typescript": 7.17.12
     "@testing-library/jest-dom": 5.16.4
-    "@testing-library/svelte": 3.1.1
+    "@testing-library/svelte": 3.1.2
     "@testing-library/user-event": 14.2.0
     "@tsconfig/svelte": 3.0.0
     "@types/jest": 27.5.1
