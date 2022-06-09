@@ -17,6 +17,9 @@
 ## [Get started](https://svelte.dev/blog/the-easiest-way-to-get-started)
 
 ```sh
+# activate the yarn package manager
+corepack enable
+
 # install npm packages
 yarn install
 
