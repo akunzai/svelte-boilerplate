@@ -6020,9 +6020,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"msw@npm:0.42.1":
-  version: 0.42.1
-  resolution: "msw@npm:0.42.1"
+"msw@npm:0.42.3":
+  version: 0.42.3
+  resolution: "msw@npm:0.42.3"
   dependencies:
     "@mswjs/cookies": ^0.2.0
     "@mswjs/interceptors": ^0.16.3
@@ -6051,7 +6051,7 @@ __metadata:
       optional: true
   bin:
     msw: cli/index.js
-  checksum: 8b3078978303ebc4e4dfc29092bf47b82982694f4d90fbcad62e626a969198e393f66c954f71603c942d1f20c6147de60b77765b233a88c00f3e0eb7bbaf2ce2
+  checksum: 6eda5102dcdfd405d13d75c8557fc8b0ceb06bcd37851d919d5392971dd43d1dd524b7d2a46f2ffa580aadc2b12eac81776cd51e7d085c41d1e4236b57cc921c
   languageName: node
   linkType: hard
 
@@ -7598,7 +7598,7 @@ __metadata:
     jest: 28.1.1
     jest-environment-jsdom: 28.1.1
     mini-css-extract-plugin: 2.6.1
-    msw: 0.42.1
+    msw: 0.42.3
     rxjs: 7.5.5
     sass: 1.53.0
     sass-loader: 13.0.0
