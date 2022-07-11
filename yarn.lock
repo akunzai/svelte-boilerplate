@@ -6926,7 +6926,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rxjs@npm:7.5.5, rxjs@npm:^7.5.5":
+"rxjs@npm:7.5.6":
+  version: 7.5.6
+  resolution: "rxjs@npm:7.5.6"
+  dependencies:
+    tslib: ^2.1.0
+  checksum: fc05f01364a74dac57490fb3e07ea63b422af04017fae1db641a009073f902ef69f285c5daac31359620dc8d9aee7d81e42b370ca2a8573d1feae0b04329383b
+  languageName: node
+  linkType: hard
+
+"rxjs@npm:^7.5.5":
   version: 7.5.5
   resolution: "rxjs@npm:7.5.5"
   dependencies:
@@ -7553,7 +7562,7 @@ __metadata:
     jest-environment-jsdom: 28.1.2
     mini-css-extract-plugin: 2.6.1
     msw: 0.43.0
-    rxjs: 7.5.5
+    rxjs: 7.5.6
     sass: 1.53.0
     sass-loader: 13.0.2
     svelte: 3.49.0
