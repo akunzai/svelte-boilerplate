@@ -35,7 +35,7 @@
     "jest": "28.1.2",
     "jest-environment-jsdom": "28.1.2",
     "mini-css-extract-plugin": "2.6.1",
-    "msw": "0.43.0",
+    "msw": "0.44.0",
     "sass": "1.53.0",
     "sass-loader": "13.0.2",
     "svelte": "3.49.0",
