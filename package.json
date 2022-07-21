@@ -2,7 +2,7 @@
   "name": "svelte-boilerplate",
   "version": "0.0.0",
   "private": true,
-  "packageManager": "yarn@3.2.1",
+  "packageManager": "yarn@3.2.2",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
     "start": "cross-env MOCK=true webpack serve --static-directory public",
