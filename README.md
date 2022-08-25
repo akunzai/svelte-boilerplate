@@ -39,12 +39,11 @@ yarn i18n:extract src/locales/zh-Hant.json
 ## Reference
 
 - [Svelte API reference](https://svelte.dev/docs)
-- [Svelte Rollup Template](https://github.com/sveltejs/template)
 - [Svelte Webpack Template](https://github.com/sveltejs/template-webpack)
 - [Svelte Preprocess](https://github.com/sveltejs/svelte-preprocess)
 - [Svelte Routing](https://github.com/EmilTholin/svelte-routing)
 - [Svelte i18n Library](https://github.com/kaisermann/svelte-i18n)
 - [Svelte Forms Library](https://github.com/tjinauyeung/svelte-forms-lib)
 - [Svelte Jest Transformer](https://github.com/mihar-22/svelte-jester)
-- [Svelte Testing Library](https://testing-library.com/docs/svelte-testing-library/intro), [Best practices](https://github.com/svelte-society/recipes-mvp/blob/master/testing.md)
+- [Svelte Testing Library](https://testing-library.com/docs/svelte-testing-library/intro)
 - [Mock Service Worker](https://mswjs.io/docs/)
