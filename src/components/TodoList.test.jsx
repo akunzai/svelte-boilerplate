@@ -3,7 +3,7 @@ import {
   render,
   screen,
   waitFor,
-  waitForElementToBeRemoved
+  waitForElementToBeRemoved,
 } from '@testing-library/svelte';
 import userEvent from '@testing-library/user-event';
 import { Router } from 'svelte-routing';

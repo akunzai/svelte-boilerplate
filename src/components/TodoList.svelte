@@ -10,7 +10,7 @@
   let title = '';
 
   onMount(() => {
-    todoService.getTodos().subscribe((values) => {
+    todoService.getTodoList().subscribe((values) => {
       todos = values;
     });
   });

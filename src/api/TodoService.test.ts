@@ -8,9 +8,9 @@ beforeAll(() => {
   jest.spyOn(global.console, 'error').mockImplementation(() => undefined);
 });
 
-describe('getTodos', () => {
+describe('getTodoList', () => {
   test('should response as expected', (done) => {
-    service.getTodos().subscribe((values) => {
+    service.getTodoList().subscribe((values) => {
       done();
       expect(values.length).toBeGreaterThan(0);
     });
@@ -22,7 +22,7 @@ describe('getTodos', () => {
         return res(ctx.status(404));
       })
     );
-    service.getTodos().subscribe((values) => {
+    service.getTodoList().subscribe((values) => {
       done();
       expect(values).toStrictEqual([]);
       expect(console.error).toBeCalled();
