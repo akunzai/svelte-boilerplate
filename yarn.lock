@@ -1053,7 +1053,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-react-jsx@npm:7.19.0":
+"@babel/plugin-transform-react-jsx@npm:^7.19.0":
   version: 7.19.0
   resolution: "@babel/plugin-transform-react-jsx@npm:7.19.0"
   dependencies:
@@ -1183,7 +1183,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-env@npm:7.19.0":
+"@babel/preset-env@npm:^7.19.0":
   version: 7.19.0
   resolution: "@babel/preset-env@npm:7.19.0"
   dependencies:
@@ -1283,7 +1283,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/preset-typescript@npm:7.18.6":
+"@babel/preset-typescript@npm:^7.18.6":
   version: 7.18.6
   resolution: "@babel/preset-typescript@npm:7.18.6"
   dependencies:
@@ -1856,7 +1856,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:5.16.5":
+"@testing-library/jest-dom@npm:^5.16.5":
   version: 5.16.5
   resolution: "@testing-library/jest-dom@npm:5.16.5"
   dependencies:
@@ -1873,7 +1873,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/svelte@npm:3.2.1":
+"@testing-library/svelte@npm:^3.2.1":
   version: 3.2.1
   resolution: "@testing-library/svelte@npm:3.2.1"
   dependencies:
@@ -1884,7 +1884,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/user-event@npm:14.4.3":
+"@testing-library/user-event@npm:^14.4.3":
   version: 14.4.3
   resolution: "@testing-library/user-event@npm:14.4.3"
   peerDependencies:
@@ -1900,7 +1900,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsconfig/svelte@npm:3.0.0":
+"@tsconfig/svelte@npm:^3.0.0":
   version: 3.0.0
   resolution: "@tsconfig/svelte@npm:3.0.0"
   checksum: 92986428a6aa87d5db9377de65cd7bd6bf73367bc3ec03bb06faba7db2ac51c45470402212914bbc76c00efa08e1116e9d269aea38274e04dbb183705dbb7a09
@@ -2102,7 +2102,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:*, @types/jest@npm:29.0.0":
+"@types/jest@npm:*, @types/jest@npm:^29.0.0":
   version: 29.0.0
   resolution: "@types/jest@npm:29.0.0"
   dependencies:
@@ -2151,10 +2151,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:18.7.14":
-  version: 18.7.14
-  resolution: "@types/node@npm:18.7.14"
-  checksum: 99cf28ff854100158de875cca23c7acc3cc01dfee526a52b90b7f36767c821bcbaf2be0a98a70f06f3b78f3c60639168ff949d725b61e2e124f9f71f1fb8043d
+"@types/node@npm:*, @types/node@npm:^18.7.15":
+  version: 18.7.15
+  resolution: "@types/node@npm:18.7.15"
+  checksum: 1435fc7fe44744467a3ba8ace646455be228516530dbb3db64a03cca6abcfdc5ba2e48a3eafc71f25f836d2ca871132361c58a5e760237a53674cb09151147d9
   languageName: node
   linkType: hard
 
@@ -2776,7 +2776,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:0.27.2":
+"axios@npm:^0.27.2":
   version: 0.27.2
   resolution: "axios@npm:0.27.2"
   dependencies:
@@ -2786,7 +2786,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-jest@npm:29.0.2, babel-jest@npm:^29.0.2":
+"babel-jest@npm:^29.0.2":
   version: 29.0.2
   resolution: "babel-jest@npm:29.0.2"
   dependencies:
@@ -2983,14 +2983,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bootstrap-icons@npm:1.9.1":
+"bootstrap-icons@npm:^1.9.1":
   version: 1.9.1
   resolution: "bootstrap-icons@npm:1.9.1"
   checksum: b388264719b5d2526809df509b83aa7e696d467f3b976d79faefb6fc7f07cee5427a894331af90b00b1ceb8d28a99fc398f1ca0553afaa53eb77a7749bb73ea5
   languageName: node
   linkType: hard
 
-"bootstrap@npm:5.2.0":
+"bootstrap@npm:^5.2.0":
   version: 5.2.0
   resolution: "bootstrap@npm:5.2.0"
   peerDependencies:
@@ -3512,7 +3512,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-env@npm:7.0.3":
+"cross-env@npm:^7.0.3":
   version: 7.0.3
   resolution: "cross-env@npm:7.0.3"
   dependencies:
@@ -3535,7 +3535,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-loader@npm:6.7.1":
+"css-loader@npm:^6.7.1":
   version: 6.7.1
   resolution: "css-loader@npm:6.7.1"
   dependencies:
@@ -4267,7 +4267,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:1.15.1":
+"follow-redirects@npm:^1.15.1":
   version: 1.15.1
   resolution: "follow-redirects@npm:1.15.1"
   peerDependenciesMeta:
@@ -5389,7 +5389,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-environment-jsdom@npm:29.0.2":
+"jest-environment-jsdom@npm:^29.0.2":
   version: 29.0.2
   resolution: "jest-environment-jsdom@npm:29.0.2"
   dependencies:
@@ -5701,7 +5701,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest@npm:29.0.2":
+"jest@npm:^29.0.2":
   version: 29.0.2
   resolution: "jest@npm:29.0.2"
   dependencies:
@@ -6108,7 +6108,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mini-css-extract-plugin@npm:2.6.1":
+"mini-css-extract-plugin@npm:^2.6.1":
   version: 2.6.1
   resolution: "mini-css-extract-plugin@npm:2.6.1"
   dependencies:
@@ -6135,7 +6135,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimist@npm:1.2.6":
+"minimist@npm:^1.2.6":
   version: 1.2.6
   resolution: "minimist@npm:1.2.6"
   checksum: d15428cd1e11eb14e1233bcfb88ae07ed7a147de251441d61158619dfb32c4d7e9061d09cab4825fdee18ecd6fce323228c8c47b5ba7cd20af378ca4048fb3fb
@@ -6260,7 +6260,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"msw@npm:0.47.0":
+"msw@npm:^0.47.0":
   version: 0.47.0
   resolution: "msw@npm:0.47.0"
   dependencies:
@@ -6314,7 +6314,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:3.3.4":
+"nanoid@npm:^3.3.4":
   version: 3.3.4
   resolution: "nanoid@npm:3.3.4"
   bin:
@@ -6368,7 +6368,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-forge@npm:1.3.1":
+"node-forge@npm:^1.3.1":
   version: 1.3.1
   resolution: "node-forge@npm:1.3.1"
   checksum: 08fb072d3d670599c89a1704b3e9c649ff1b998256737f0e06fbd1a5bf41cae4457ccaee32d95052d80bbafd9ffe01284e078c8071f0267dc9744e51c5ed42a9
@@ -7240,7 +7240,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rxjs@npm:7.5.6, rxjs@npm:^7.5.5":
+"rxjs@npm:^7.5.5, rxjs@npm:^7.5.6":
   version: 7.5.6
   resolution: "rxjs@npm:7.5.6"
   dependencies:
@@ -7291,7 +7291,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass-loader@npm:13.0.2":
+"sass-loader@npm:^13.0.2":
   version: 13.0.2
   resolution: "sass-loader@npm:13.0.2"
   dependencies:
@@ -7316,7 +7316,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:1.54.8":
+"sass@npm:^1.54.8":
   version: 1.54.8
   resolution: "sass@npm:1.54.8"
   dependencies:
@@ -7865,47 +7865,47 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "svelte-boilerplate@workspace:."
   dependencies:
-    "@babel/plugin-transform-react-jsx": 7.19.0
-    "@babel/preset-env": 7.19.0
-    "@babel/preset-typescript": 7.18.6
-    "@testing-library/jest-dom": 5.16.5
-    "@testing-library/svelte": 3.2.1
-    "@testing-library/user-event": 14.4.3
-    "@tsconfig/svelte": 3.0.0
-    "@types/jest": 29.0.0
-    "@types/node": 18.7.14
-    axios: 0.27.2
-    babel-jest: 29.0.2
-    bootstrap: 5.2.0
-    bootstrap-icons: 1.9.1
-    cross-env: 7.0.3
-    css-loader: 6.7.1
-    jest: 29.0.2
-    jest-environment-jsdom: 29.0.2
-    mini-css-extract-plugin: 2.6.1
-    msw: 0.47.0
-    rxjs: 7.5.6
-    sass: 1.54.8
-    sass-loader: 13.0.2
-    svelte: 3.50.0
-    svelte-check: 2.9.0
-    svelte-forms-lib: 2.0.1
-    svelte-i18n: 3.4.0
-    svelte-jester: 2.3.2
-    svelte-jsx: 2.0.0
-    svelte-loader: 3.1.3
-    svelte-preprocess: 4.10.7
-    svelte-routing: 1.6.0
-    ts-loader: 9.3.1
-    tslib: 2.4.0
-    typescript: 4.8.2
-    webpack: 5.74.0
-    webpack-cli: 4.10.0
-    webpack-dev-server: 4.10.1
+    "@babel/plugin-transform-react-jsx": ^7.19.0
+    "@babel/preset-env": ^7.19.0
+    "@babel/preset-typescript": ^7.18.6
+    "@testing-library/jest-dom": ^5.16.5
+    "@testing-library/svelte": ^3.2.1
+    "@testing-library/user-event": ^14.4.3
+    "@tsconfig/svelte": ^3.0.0
+    "@types/jest": ^29.0.0
+    "@types/node": ^18.7.15
+    axios: ^0.27.2
+    babel-jest: ^29.0.2
+    bootstrap: ^5.2.0
+    bootstrap-icons: ^1.9.1
+    cross-env: ^7.0.3
+    css-loader: ^6.7.1
+    jest: ^29.0.2
+    jest-environment-jsdom: ^29.0.2
+    mini-css-extract-plugin: ^2.6.1
+    msw: ^0.47.0
+    rxjs: ^7.5.6
+    sass: ^1.54.8
+    sass-loader: ^13.0.2
+    svelte: ^3.50.0
+    svelte-check: ^2.9.0
+    svelte-forms-lib: ^2.0.1
+    svelte-i18n: ^3.4.0
+    svelte-jester: ^2.3.2
+    svelte-jsx: ^2.0.0
+    svelte-loader: ^3.1.3
+    svelte-preprocess: ^4.10.7
+    svelte-routing: ^1.6.0
+    ts-loader: ^9.3.1
+    tslib: ^2.4.0
+    typescript: ~4.8.2
+    webpack: ^5.74.0
+    webpack-cli: ^4.10.0
+    webpack-dev-server: ^4.10.1
   languageName: unknown
   linkType: soft
 
-"svelte-check@npm:2.9.0":
+"svelte-check@npm:^2.9.0":
   version: 2.9.0
   resolution: "svelte-check@npm:2.9.0"
   dependencies:
@@ -7932,7 +7932,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-forms-lib@npm:2.0.1":
+"svelte-forms-lib@npm:^2.0.1":
   version: 2.0.1
   resolution: "svelte-forms-lib@npm:2.0.1"
   dependencies:
@@ -7971,7 +7971,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-i18n@npm:3.4.0":
+"svelte-i18n@npm:^3.4.0":
   version: 3.4.0
   resolution: "svelte-i18n@npm:3.4.0"
   dependencies:
@@ -7988,7 +7988,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-jester@npm:2.3.2":
+"svelte-jester@npm:^2.3.2":
   version: 2.3.2
   resolution: "svelte-jester@npm:2.3.2"
   peerDependencies:
@@ -7998,7 +7998,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-jsx@npm:2.0.0":
+"svelte-jsx@npm:^2.0.0":
   version: 2.0.0
   resolution: "svelte-jsx@npm:2.0.0"
   dependencies:
@@ -8012,7 +8012,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-loader@npm:3.1.3":
+"svelte-loader@npm:^3.1.3":
   version: 3.1.3
   resolution: "svelte-loader@npm:3.1.3"
   dependencies:
@@ -8025,7 +8025,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-preprocess@npm:4.10.7, svelte-preprocess@npm:^4.0.0":
+"svelte-preprocess@npm:^4.0.0, svelte-preprocess@npm:^4.10.7":
   version: 4.10.7
   resolution: "svelte-preprocess@npm:4.10.7"
   dependencies:
@@ -8074,7 +8074,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-routing@npm:1.6.0":
+"svelte-routing@npm:^1.6.0":
   version: 1.6.0
   resolution: "svelte-routing@npm:1.6.0"
   dependencies:
@@ -8098,7 +8098,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:3.50.0":
+"svelte@npm:^3.50.0":
   version: 3.50.0
   resolution: "svelte@npm:3.50.0"
   checksum: cc8e8fd14bac3add208b00b9c2ffd64d343f29f84a626899762b3c9d00010cab5f49dce44d376acb270f996c860ad49b727d2bf140f434f2b959061b22249548
@@ -8165,7 +8165,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"terser@npm:5.15.0":
+"terser@npm:^5.15.0":
   version: 5.15.0
   resolution: "terser@npm:5.15.0"
   dependencies:
@@ -8280,7 +8280,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-loader@npm:9.3.1":
+"ts-loader@npm:^9.3.1":
   version: 9.3.1
   resolution: "ts-loader@npm:9.3.1"
   dependencies:
@@ -8295,7 +8295,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:2.4.0, tslib@npm:^2.0.3, tslib@npm:^2.1.0":
+"tslib@npm:^2.0.3, tslib@npm:^2.1.0, tslib@npm:^2.4.0":
   version: 2.4.0
   resolution: "tslib@npm:2.4.0"
   checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113
@@ -8342,7 +8342,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:*, typescript@npm:4.8.2":
+"typescript@npm:*, typescript@npm:~4.8.2":
   version: 4.8.2
   resolution: "typescript@npm:4.8.2"
   bin:
@@ -8352,7 +8352,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@*#~builtin<compat/typescript>, typescript@patch:typescript@4.8.2#~builtin<compat/typescript>":
+"typescript@patch:typescript@*#~builtin<compat/typescript>, typescript@patch:typescript@~4.8.2#~builtin<compat/typescript>":
   version: 4.8.2
   resolution: "typescript@patch:typescript@npm%3A4.8.2#~builtin<compat/typescript>::version=4.8.2&hash=a1c5e5"
   bin:
@@ -8583,7 +8583,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-cli@npm:4.10.0":
+"webpack-cli@npm:^4.10.0":
   version: 4.10.0
   resolution: "webpack-cli@npm:4.10.0"
   dependencies:
@@ -8631,7 +8631,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack-dev-server@npm:4.10.1":
+"webpack-dev-server@npm:^4.10.1":
   version: 4.10.1
   resolution: "webpack-dev-server@npm:4.10.1"
   dependencies:
@@ -8692,7 +8692,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:5.74.0":
+"webpack@npm:^5.74.0":
   version: 5.74.0
   resolution: "webpack@npm:5.74.0"
   dependencies:
