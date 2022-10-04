@@ -13,7 +13,7 @@
     "i18n:extract": "svelte-i18n extract 'src/**/*.svelte'"
   },
   "dependencies": {
-    "axios": "^0.27.2",
+    "axios": "^1.0.0",
     "rxjs": "^7.5.7",
     "svelte-routing": "^1.6.0"
   },
