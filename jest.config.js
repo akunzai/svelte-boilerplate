@@ -9,7 +9,7 @@ module.exports = {
     ],
     '\\.[jt]sx?$': 'babel-jest',
   },
-  transformIgnorePatterns: ['node_modules/(?!svelte-routing)'],
+  transformIgnorePatterns: ['node_modules/(?!(axios|svelte-routing))'],
   moduleFileExtensions: ['ts', 'js', 'jsx', 'svelte'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   collectCoverageFrom: [
