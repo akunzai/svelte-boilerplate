@@ -44,6 +44,6 @@ yarn i18n:extract src/locales/zh-Hant.json
 - [Svelte Routing](https://github.com/EmilTholin/svelte-routing)
 - [Svelte i18n Library](https://github.com/kaisermann/svelte-i18n)
 - [Svelte Forms Library](https://github.com/tjinauyeung/svelte-forms-lib)
-- [Svelte Jest Transformer](https://github.com/mihar-22/svelte-jester)
+- [Svelte Jest Transformer](https://github.com/svelteness/svelte-jester)
 - [Svelte Testing Library](https://testing-library.com/docs/svelte-testing-library/intro)
 - [Mock Service Worker](https://mswjs.io/docs/)
