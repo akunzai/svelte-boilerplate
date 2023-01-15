@@ -1714,7 +1714,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jridgewell/trace-mapping@npm:^0.3.0, @jridgewell/trace-mapping@npm:^0.3.12, @jridgewell/trace-mapping@npm:^0.3.15, @jridgewell/trace-mapping@npm:^0.3.9":
+"@jridgewell/trace-mapping@npm:^0.3.0, @jridgewell/trace-mapping@npm:^0.3.12, @jridgewell/trace-mapping@npm:^0.3.15, @jridgewell/trace-mapping@npm:^0.3.17, @jridgewell/trace-mapping@npm:^0.3.9":
   version: 0.3.17
   resolution: "@jridgewell/trace-mapping@npm:0.3.17"
   dependencies:
@@ -2098,13 +2098,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:*, @types/jest@npm:^29.2.4":
-  version: 29.2.4
-  resolution: "@types/jest@npm:29.2.4"
+"@types/jest@npm:*, @types/jest@npm:^29.2.5":
+  version: 29.2.5
+  resolution: "@types/jest@npm:29.2.5"
   dependencies:
     expect: ^29.0.0
     pretty-format: ^29.0.0
-  checksum: 9deb4756fe1b438d41ff1aae7d6c216c9e49e5fe60f539f8edb6698ffeb530ff7b25d37e223439b03602ca3a7397c9c2e53e1a39c7bd616353472fce0cc04107
+  checksum: d668470f00ec4cb8b8457f1fd90f7358fad8f22d74b85006dad6be522d6b9bf10f49f597e88d1d1a518d211c1b65be32a1f27f0e49ce0658d110a9206b8ea310
   languageName: node
   linkType: hard
 
@@ -2161,7 +2161,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/pug@npm:^2.0.4, @types/pug@npm:^2.0.6":
+"@types/pug@npm:^2.0.6":
   version: 2.0.6
   resolution: "@types/pug@npm:2.0.6"
   checksum: e8d09c3ddc7e6b87050a16d73694518f259a8ed74a0ab79b81b847baf89d92d44959ed68199966ac6f4a218c715c9bb3e4c86c8800d4868a4a674f4b21d2f01d
@@ -2189,7 +2189,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/sass@npm:^1.16.0, @types/sass@npm:^1.43.1":
+"@types/sass@npm:^1.43.1":
   version: 1.43.1
   resolution: "@types/sass@npm:1.43.1"
   dependencies:
@@ -2772,14 +2772,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "axios@npm:1.2.1"
+"axios@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "axios@npm:1.2.2"
   dependencies:
     follow-redirects: ^1.15.0
     form-data: ^4.0.0
     proxy-from-env: ^1.1.0
-  checksum: c4dc4e119064c9aed09a3de309bedb797a139a6fb372223aafe3e0c10a7d4a14e4d3e9c9d309467fadb9d2b490b891ee3df96ef5b55716bb971910466ff9f0c5
+  checksum: 6e357491b38426c5720f7328ecbafca3c643b03952c052d787570672ce7a9365717c2d64db4ce97cfbee3f830fa405101e360e14d0857ef7f96a9f4d814c4e03
   languageName: node
   linkType: hard
 
@@ -3745,7 +3745,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detect-indent@npm:^6.0.0, detect-indent@npm:^6.1.0":
+"detect-indent@npm:^6.1.0":
   version: 6.1.0
   resolution: "detect-indent@npm:6.1.0"
   checksum: ab953a73c72dbd4e8fc68e4ed4bfd92c97eb6c43734af3900add963fd3a9316f3bc0578b018b24198d4c31a358571eff5f0656e81a1f3b9ad5c547d58b2d093d
@@ -6066,15 +6066,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"magic-string@npm:^0.25.7":
-  version: 0.25.9
-  resolution: "magic-string@npm:0.25.9"
-  dependencies:
-    sourcemap-codec: ^1.4.8
-  checksum: 9a0e55a15c7303fc360f9572a71cffba1f61451bc92c5602b1206c9d17f492403bf96f946dfce7483e66822d6b74607262e24392e87b0ac27b786e69a40e9b1a
-  languageName: node
-  linkType: hard
-
 "magic-string@npm:^0.27.0":
   version: 0.27.0
   resolution: "magic-string@npm:0.27.0"
@@ -7766,7 +7757,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sourcemap-codec@npm:^1.3.0, sourcemap-codec@npm:^1.4.8":
+"sourcemap-codec@npm:^1.3.0":
   version: 1.4.8
   resolution: "sourcemap-codec@npm:1.4.8"
   checksum: b57981c05611afef31605732b598ccf65124a9fcb03b833532659ac4d29ac0f7bfacbc0d6c5a28a03e84c7510e7e556d758d0bb57786e214660016fb94279316
@@ -7986,9 +7977,9 @@ __metadata:
     "@testing-library/svelte": ^3.2.2
     "@testing-library/user-event": ^14.4.3
     "@tsconfig/svelte": ^3.0.0
-    "@types/jest": ^29.2.4
+    "@types/jest": ^29.2.5
     "@types/node": ^18.11.18
-    axios: ^1.2.1
+    axios: ^1.2.2
     babel-jest: ^29.3.1
     bootstrap: ^5.2.3
     bootstrap-icons: ^1.10.3
@@ -8001,8 +7992,8 @@ __metadata:
     rxjs: ^7.8.0
     sass: ^1.57.1
     sass-loader: ^13.2.0
-    svelte: ^3.55.0
-    svelte-check: ^2.9.2
+    svelte: ^3.55.1
+    svelte-check: ^3.0.2
     svelte-forms-lib: ^2.0.1
     svelte-i18n: ^3.6.0
     svelte-jester: ^2.3.2
@@ -8019,23 +8010,23 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"svelte-check@npm:^2.9.2":
-  version: 2.10.3
-  resolution: "svelte-check@npm:2.10.3"
+"svelte-check@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "svelte-check@npm:3.0.2"
   dependencies:
-    "@jridgewell/trace-mapping": ^0.3.9
+    "@jridgewell/trace-mapping": ^0.3.17
     chokidar: ^3.4.1
     fast-glob: ^3.2.7
     import-fresh: ^3.2.1
     picocolors: ^1.0.0
     sade: ^1.7.4
-    svelte-preprocess: ^4.0.0
-    typescript: "*"
+    svelte-preprocess: ^5.0.0
+    typescript: ^4.9.4
   peerDependencies:
-    svelte: ^3.24.0
+    svelte: ^3.55.0
   bin:
     svelte-check: bin/svelte-check
-  checksum: 995a99da45aece86b5095bf554f77904c4b03462cffd5245afe096d5cad5fe44daa348183f0738f8273e69bb60c9fb789d076bc27c1f3c26a54f907f7bcf7f9e
+  checksum: 5ce438680eea2648c81198ffa27bfbbfae284b34f9cd5171b2e9d8a10569bd389da2922b6d8b7f9de32e1b199af09bb5fd0a3632bb5fb9a8de42a0b4cffbfd3a
   languageName: node
   linkType: hard
 
@@ -8140,55 +8131,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-preprocess@npm:^4.0.0":
-  version: 4.10.7
-  resolution: "svelte-preprocess@npm:4.10.7"
-  dependencies:
-    "@types/pug": ^2.0.4
-    "@types/sass": ^1.16.0
-    detect-indent: ^6.0.0
-    magic-string: ^0.25.7
-    sorcery: ^0.10.0
-    strip-indent: ^3.0.0
-  peerDependencies:
-    "@babel/core": ^7.10.2
-    coffeescript: ^2.5.1
-    less: ^3.11.3 || ^4.0.0
-    postcss: ^7 || ^8
-    postcss-load-config: ^2.1.0 || ^3.0.0 || ^4.0.0
-    pug: ^3.0.0
-    sass: ^1.26.8
-    stylus: ^0.55.0
-    sugarss: ^2.0.0
-    svelte: ^3.23.0
-    typescript: ^3.9.5 || ^4.0.0
-  peerDependenciesMeta:
-    "@babel/core":
-      optional: true
-    coffeescript:
-      optional: true
-    less:
-      optional: true
-    node-sass:
-      optional: true
-    postcss:
-      optional: true
-    postcss-load-config:
-      optional: true
-    pug:
-      optional: true
-    sass:
-      optional: true
-    stylus:
-      optional: true
-    sugarss:
-      optional: true
-    typescript:
-      optional: true
-  checksum: 51a0820c14bcc411ddf3b1cf4c772e73873626ed0b6c54dfca9e06bd6a6b22c9502436df3f1a4dab9eb3a404bba95002fd70cadea29a84fc36da3071309a8b91
-  languageName: node
-  linkType: hard
-
 "svelte-preprocess@npm:^5.0.0":
   version: 5.0.0
   resolution: "svelte-preprocess@npm:5.0.0"
@@ -8260,10 +8202,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:^3.55.0":
-  version: 3.55.0
-  resolution: "svelte@npm:3.55.0"
-  checksum: 0b182973a4152fec8baa59cc168ca4528d63faba130bc83063a7d55d1732a81303b48745f4bffe53436b875b9c98960b0265d45473e5b3d25c77b116fdc274f0
+"svelte@npm:^3.55.1":
+  version: 3.55.1
+  resolution: "svelte@npm:3.55.1"
+  checksum: ce66391bae68b2055a0a63ee0477e73f036247d4dd5abd5240372d5f4971a452ad29c4ef2c630ab089697429edd61756ef7b764e7597ad7e897ce9f8a9457fec
   languageName: node
   linkType: hard
 
@@ -8518,7 +8460,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:*, typescript@npm:~4.9.4":
+"typescript@npm:^4.9.4, typescript@npm:~4.9.4":
   version: 4.9.4
   resolution: "typescript@npm:4.9.4"
   bin:
@@ -8528,7 +8470,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@*#~builtin<compat/typescript>, typescript@patch:typescript@~4.9.4#~builtin<compat/typescript>":
+"typescript@patch:typescript@^4.9.4#~builtin<compat/typescript>, typescript@patch:typescript@~4.9.4#~builtin<compat/typescript>":
   version: 4.9.4
   resolution: "typescript@patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"
   bin:
