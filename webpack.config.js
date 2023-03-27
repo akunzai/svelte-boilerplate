@@ -13,8 +13,10 @@ module.exports = {
   },
   resolve: {
     alias: {
+      dequal: path.dirname(require.resolve('dequal/package.json')),
       svelte: path.dirname(require.resolve('svelte/package.json')),
     },
+    conditionNames: ['svelte'],
     extensions: ['.mjs', '.js', '.ts', '.svelte'],
     mainFields: ['svelte', 'browser', 'module', 'main'],
   },
