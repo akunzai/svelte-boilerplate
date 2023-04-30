@@ -13,8 +13,9 @@ module.exports = {
   },
   resolve: {
     alias: {
-      dequal: path.dirname(require.resolve('dequal/package.json')),
-      svelte: path.dirname(require.resolve('svelte/package.json')),
+      dequal: path.resolve('node_modules','dequal'),
+      svelte: path.resolve('node_modules','svelte'),
+      'web-encoding': path.resolve('node_modules','web-encoding'),
     },
     conditionNames: ['svelte'],
     extensions: ['.mjs', '.js', '.ts', '.svelte'],
