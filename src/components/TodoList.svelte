@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import { onMount } from 'svelte/internal';
   import { _ } from 'svelte-i18n';
   import { Link } from 'svelte-routing';
   import { TodoService } from '../api';

@@ -1,21 +1,22 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/svelte';
 import userEvent from '@testing-library/user-event';
+import { vi } from "vitest";
 import '../i18nForTests';
 import TodoDetail from './TodoDetail.svelte';
 
 beforeAll(() => {
-  jest.spyOn(global.console, 'error').mockImplementation(() => undefined);
+  vi.spyOn(global.console, 'error').mockImplementation(() => undefined);
 });
 
 test('without Todo should render nothing', async () => {
-  render(TodoDetail, { id: null });
+  render(TodoDetail, { id: 0 });
   expect(screen.queryAllByRole('textbox')).toStrictEqual([]);
 });
 
 describe('with Todo', () => {
   beforeEach(async () => {
-    window.history.back = jest.fn();
-    render(TodoDetail, { id: '1' });
+    window.history.back = vi.fn();
+    render(TodoDetail, { id: 1 });
     await waitFor(() => {
       expect(screen.getByDisplayValue('Pay bills')).toBeInTheDocument();
     });

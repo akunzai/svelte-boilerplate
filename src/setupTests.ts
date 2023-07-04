@@ -1,7 +1,6 @@
 import '@testing-library/jest-dom';
 import '@testing-library/jest-dom/extend-expect';
-import './jest.global-mocks';
-import { server } from './src/mocks/server';
+import { server } from './mocks/server';
 
 beforeAll(() => {
   // Enable the mocking in tests.
