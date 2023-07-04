@@ -29,7 +29,7 @@ yarn start
 # Running unit tests
 yarn test
 
-# build the project in production mode. The build artifacts will be stored in the `public/build/` directory
+# build the project in production mode. The build artifacts will be stored in the `dist/` directory
 yarn build
 
 # extracts i18n messages from source code
@@ -39,8 +39,7 @@ yarn i18n:extract src/locales/zh-Hant.json
 ## Reference
 
 - [Svelte API reference](https://svelte.dev/docs)
-- [Svelte Webpack Template](https://github.com/sveltejs/template-webpack)
-- [Svelte Preprocess](https://github.com/sveltejs/svelte-preprocess)
+- [Svelte plugin for Vite](https://github.com/sveltejs/vite-plugin-svelte)
 - [Svelte Routing](https://github.com/EmilTholin/svelte-routing)
 - [Svelte i18n Library](https://github.com/kaisermann/svelte-i18n)
 - [Svelte Forms Library](https://github.com/tjinauyeung/svelte-forms-lib)

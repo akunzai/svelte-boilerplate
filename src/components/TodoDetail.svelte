@@ -1,17 +1,19 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  // HACK: mack onMount works in vitest
+  // https://github.com/sveltejs/svelte/issues/5534
+  import { onMount } from 'svelte/internal';
   import { createForm } from 'svelte-forms-lib';
   import { _ } from 'svelte-i18n';
   import { TodoService } from '../api';
   import { Todo } from '../types';
 
   const todoService = new TodoService();
-  export let id: string;
+  export let id: number;
   let loaded = false;
 
   const { form, handleChange, handleSubmit, updateInitialValues } =
     createForm<Todo>({
-      initialValues: new Todo(Number(id), '', undefined, false),
+      initialValues: new Todo(id, '', undefined, false),
       onSubmit: (values) => {
         todoService.updateTodo(values).subscribe(() => {
           history.back();
@@ -20,7 +22,7 @@
     });
 
   onMount(() => {
-    todoService.getTodo(Number(id)).subscribe((values) => {
+    todoService.getTodo(id).subscribe((values) => {
       if (values !== undefined) {
         loaded = true;
         updateInitialValues(values);

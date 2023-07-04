@@ -3,7 +3,7 @@ import type { Action } from './types';
 
 export function clickOutside(
   node: HTMLElement,
-  params: { enabled: boolean; cb: Function }
+  params: { enabled: boolean; cb: () => void }
 ): ReturnType<Action> {
   const { enabled: initialEnabled, cb } = params;
 

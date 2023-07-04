@@ -1,17 +1,6 @@
-const sveltePreprocess = require('svelte-preprocess');
-const mode = process.env.NODE_ENV || 'development';
-const prod = mode === 'production';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 
-module.exports = {
-  //https://svelte.dev/docs#svelte_compile
-  compilerOptions: {
-    dev: !prod,
-  },
-  preprocess: sveltePreprocess({
-    sourceMap: !prod,
-    scss: {
-      renderSync: true,
-      implementation: require('sass'),
-    },
-  }),
+export default {
+  // https://svelte.dev/docs/svelte-compiler#preprocess
+  preprocess: vitePreprocess(),
 };

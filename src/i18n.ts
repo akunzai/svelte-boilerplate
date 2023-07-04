@@ -1,6 +1,6 @@
 import { addMessages, init, getLocaleFromNavigator } from 'svelte-i18n';
 
-const zhHant = require('./locales/zh-Hant.json');
+import zhHant from './locales/zh-Hant.json';
 
 addMessages('en', {});
 addMessages('zh-Hant', zhHant);
