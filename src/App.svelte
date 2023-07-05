@@ -10,9 +10,11 @@
 <Router>
   <NavMenu title={document.title} />
   <main class="container">
-    <Route path="/counter" component={Counter} />
-    <Route path="/todo-list" component={TodoList} />
-    <Route path="/todo/:id" component={TodoDetail} />
-    <Route component={Home} />
+    <Route path="/counter"><Counter /></Route>
+    <Route path="/todo-list"><TodoList /></Route>
+    <Route path="/todo/:id" let:params
+      ><TodoDetail id={Number(params.id)} /></Route
+    >
+    <Route><Home /></Route>
   </main>
 </Router>
