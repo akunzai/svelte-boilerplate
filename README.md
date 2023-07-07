@@ -23,7 +23,7 @@ corepack enable
 # install npm packages
 yarn install
 
-# watch and serve a dev server at http://localhost:8080/
+# watch and serve a dev server at http://localhost:5173/
 yarn start
 
 # Running unit tests
