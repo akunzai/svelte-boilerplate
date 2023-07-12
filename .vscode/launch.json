@@ -5,36 +5,19 @@
       "name": "Launch Chrome against localhost",
       "type": "chrome",
       "request": "launch",
-      "url": "http://localhost:8080",
-      "webRoot": "${workspaceFolder}/src",
-      "sourceMapPathOverrides": {
-        "webpack:///src/*": "${workspaceFolder}/*"
-      }
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}",
     },
     {
-      "name": "Debug All Tests",
+      "name": "Debug Current Test File",
       "type": "node",
       "request": "launch",
-      "runtimeArgs": [
-        "--inspect-brk",
-        "${workspaceRoot}/node_modules/jest/bin/jest.js",
-        "--runInBand"
-      ],
+      "skipFiles": ["<node_internals>/**", "**/node_modules/**"],
+      "program": "${workspaceRoot}/node_modules/vitest/vitest.mjs",
+      "args": ["run", "${relativeFile}"],
+      "smartStep": true,
       "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen"
-    },
-    {
-      "name": "Debug Current Test",
-      "type": "node",
-      "request": "launch",
-      "runtimeArgs": [
-        "--inspect-brk",
-        "${workspaceRoot}/node_modules/jest/bin/jest.js",
-        "--testPathPattern=${fileBasenameNoExtension}",
-        "--runInBand"
-      ],
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen"
+      "runtimeVersion": "18"
     }
   ]
 }
