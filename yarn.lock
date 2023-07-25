@@ -4002,7 +4002,7 @@ __metadata:
     svelte-forms-lib: ^2.0.1
     svelte-htm: ^1.2.0
     svelte-i18n: ^3.7.0
-    svelte-routing: ^1.11.0
+    svelte-routing: ^2.0.0
     tslib: ^2.6.0
     typescript: ~5.1.6
     vite: ^4.4.5
@@ -4148,10 +4148,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-routing@npm:^1.11.0":
-  version: 1.11.0
-  resolution: "svelte-routing@npm:1.11.0"
-  checksum: a2924bfb9ccc223ba3a44aefee093861ac90c88026e88574f3c87124328013482112a0d2d0e538e6dd76c51e9a700c572bd8f35372c6f5a73cd9ccece728690c
+"svelte-routing@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "svelte-routing@npm:2.0.0"
+  checksum: 4b77c75a0aa9ada4e4dc598018c99fdf095284e9e2a38693f7c48285462c899211b2f0a63f1beb4cb7bb15cb90f0be0e9f7c10407bea4dffcba17567426f09c2
   languageName: node
   linkType: hard
 
