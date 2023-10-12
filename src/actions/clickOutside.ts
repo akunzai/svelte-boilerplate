@@ -1,10 +1,10 @@
 // https://svelte.dev/repl/dae848c2157e48ab932106779960f5d5
-import type { Action } from './types';
+import type { ActionReturn } from 'svelte/action';
 
 export function clickOutside(
   node: HTMLElement,
   params: { enabled: boolean; cb: () => void }
-): ReturnType<Action> {
+): ActionReturn<{ enabled: boolean }> {
   const { enabled: initialEnabled, cb } = params;
 
   const handleOutsideClick = ({ target }: MouseEvent) => {

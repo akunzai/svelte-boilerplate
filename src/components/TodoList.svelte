@@ -6,7 +6,7 @@
   import type { Todo } from '../types';
 
   const todoService = new TodoService();
-  let todos = [];
+  let todos: Todo[] = [];
   let title = '';
 
   onMount(() => {
