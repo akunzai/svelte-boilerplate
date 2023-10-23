@@ -9,11 +9,13 @@
   let expanded = false;
 
   locale.subscribe((lang) => {
+    if (!lang) return;
     localStorage.setItem('locale', lang);
   });
 
   const isCurrentLanguage = (pattern: RegExp): boolean => {
     const currentLocale = get(locale);
+    if (!currentLocale) return false;
     return pattern.test(currentLocale);
   };
   const changeLanguage = (lang: string): void => {
