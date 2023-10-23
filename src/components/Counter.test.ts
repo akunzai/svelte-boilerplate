@@ -1,6 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/svelte';
-import Counter from './Counter.svelte';
+import { beforeEach, expect, test } from 'vitest';
 import '../i18nForTests';
+import Counter from './Counter.svelte';
 
 beforeEach(() => {
   render(Counter);

@@ -9,6 +9,7 @@ import userEvent from '@testing-library/user-event';
 import { HttpResponse, http } from 'msw';
 import html from 'svelte-htm';
 import { Router } from 'svelte-routing';
+import { beforeEach, expect, test } from 'vitest';
 import '../i18nForTests';
 import { server } from '../mocks/server';
 import { Todo } from '../types';
