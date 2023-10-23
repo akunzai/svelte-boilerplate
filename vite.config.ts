@@ -9,6 +9,7 @@ export default defineConfig({
     open: true,
   },
   test: {
+    alias: [{ find: /^svelte$/, replacement: 'svelte/internal' }],
     globals: true,
     environment: 'jsdom',
     setupFiles: './src/setupTests.ts'
