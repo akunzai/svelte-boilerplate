@@ -1,7 +1,5 @@
 <script lang="ts">
-  // HACK: mack onMount works in vitest
-  // https://github.com/sveltejs/svelte/issues/5534
-  import { onMount } from 'svelte/internal';
+  import { onMount } from 'svelte';
   import { createForm } from 'svelte-forms-lib';
   import { _ } from 'svelte-i18n';
   import { TodoService } from '../api';
