@@ -1,6 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/svelte';
 import html from 'svelte-htm';
 import { Router } from 'svelte-routing';
+import { beforeEach, expect, test } from 'vitest';
 import '../i18nForTests';
 import NavMenu from './NavMenu.svelte';
 
