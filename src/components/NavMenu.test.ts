@@ -11,12 +11,12 @@ beforeEach(() => {
   <//>`);
 });
 
-test('should render with title: Test', () => {
-  expect(screen.getByText('Test')).toBeInTheDocument();
+test('should render with title: Test', async () => {
+  expect(await screen.findByText('Test')).toBeInTheDocument();
 });
 
 test('support to toggle navigation', async () => {
-  const navbar = screen.getByRole('menu');
+  const navbar = await screen.findByRole('menu');
   expect(navbar.getAttribute('class')).not.toContain('show');
   await fireEvent.click(
     screen.getByRole('button', { name: /Toggle navigation/i })
@@ -26,7 +26,7 @@ test('support to toggle navigation', async () => {
 
 test('support to switch languages', async () => {
   await fireEvent.click(
-    screen.getByRole('button', { name: /Toggle Languages/i })
+    await screen.findByRole('button', { name: /Toggle Languages/i })
   );
   await fireEvent.click(screen.getByRole('button', { name: /English/i }));
   expect(localStorage.getItem('locale')).toBe('en');

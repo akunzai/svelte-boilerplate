@@ -19,11 +19,10 @@ beforeEach(async () => {
   render(html`<${Router}>
     <${TodoList} />
   <//>`);
-  await waitFor(() => expect(screen.getAllByRole('link').length).toBe(3));
 });
 
-test('should renders as expected', () => {
-  const links = screen.getAllByRole('link');
+test('should renders as expected', async () => {
+  const links = await screen.findAllByRole('link');
   expect(links.length).toBe(3);
   expect(links[0].textContent).toContain('Pay bills');
   expect(links[0].getAttribute('href')).toBe('/todo/1');
@@ -51,7 +50,7 @@ test('should remove item when delete button clicked', async () => {
       ]);
     })
   );
-  const buttons = screen.getAllByRole('button', { name: /Close/i });
+  const buttons = await screen.findAllByRole('button', { name: /Close/i });
   await fireEvent.click(buttons[2]);
   await waitForElementToBeRemoved(
     screen.getByRole('link', { name: /Buy eggs/ })
@@ -60,7 +59,7 @@ test('should remove item when delete button clicked', async () => {
 });
 
 test('should update item when checkbox checked', async () => {
-  const inputs = screen.getAllByRole('checkbox');
+  const inputs = await screen.findAllByRole('checkbox');
   await fireEvent.click(inputs[2]);
   await waitFor(() => {
     expect(screen.getAllByRole('link')[2].getAttribute('class')).toContain(
@@ -70,7 +69,7 @@ test('should update item when checkbox checked', async () => {
 });
 
 test('should not add item without any input', async () => {
-  await fireEvent.click(screen.getByRole('button', { name: /Add/i }));
+  await fireEvent.click(await screen.findByRole('button', { name: /Add/i }));
   expect((await screen.findAllByRole('link')).length).toBe(3);
 });
 
