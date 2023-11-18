@@ -12,7 +12,6 @@ import { Router } from 'svelte-routing';
 import { beforeEach, expect, test } from 'vitest';
 import '../i18nForTests';
 import { server } from '../mocks/server';
-import { Todo } from '../types';
 import TodoList from './TodoList.svelte';
 
 beforeEach(async () => {
@@ -43,12 +42,6 @@ test('should remove item when delete button clicked', async () => {
     http.delete('/api/todos/3', () => {
       return new HttpResponse(null, { status: 200 });
     }),
-    http.get('/api/todos', () => {
-      return HttpResponse.json([
-        new Todo(1, 'Pay bills', '', true),
-        new Todo(2, 'Read a book'),
-      ]);
-    })
   );
   const buttons = await screen.findAllByRole('button', { name: /Close/i });
   await fireEvent.click(buttons[2]);
