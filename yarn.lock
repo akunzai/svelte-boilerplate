@@ -4676,7 +4676,7 @@ __metadata:
     msw: "npm:^2.0.8"
     rxjs: "npm:^7.8.1"
     sass: "npm:^1.69.5"
-    svelte: "npm:^4.2.5"
+    svelte: "npm:^4.2.8"
     svelte-check: "npm:^3.6.0"
     svelte-forms-lib: "npm:^2.0.1"
     svelte-htm: "npm:^1.2.0"
@@ -4836,9 +4836,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte@npm:^4.2.5":
-  version: 4.2.5
-  resolution: "svelte@npm:4.2.5"
+"svelte@npm:^4.2.8":
+  version: 4.2.8
+  resolution: "svelte@npm:4.2.8"
   dependencies:
     "@ampproject/remapping": "npm:^2.2.1"
     "@jridgewell/sourcemap-codec": "npm:^1.4.15"
@@ -4853,7 +4853,7 @@ __metadata:
     locate-character: "npm:^3.0.0"
     magic-string: "npm:^0.30.4"
     periscopic: "npm:^3.1.0"
-  checksum: e1e4ed8bef8018fd558fbfd7c0c7dc085d6554bab608a149eabb43af61b720c5493ac8c3f8507bc1d4d3e5482ad96934d3e144881e282bed3ea0fb4d2501929e
+  checksum: 13673a6211cc38224398f4bda8e0ba93edfb1338aa4f28f614a31ac31b152479038761cfc57f1668554f5ab70effcd8023dcf549d75e7b2a7ae703d213b7e9da
   languageName: node
   linkType: hard
 
