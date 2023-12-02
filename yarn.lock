@@ -4681,7 +4681,7 @@ __metadata:
     svelte-forms-lib: "npm:^2.0.1"
     svelte-htm: "npm:^1.2.0"
     svelte-i18n: "npm:^4.0.0"
-    svelte-routing: "npm:^2.6.0"
+    svelte-routing: "npm:^2.9.0"
     tslib: "npm:^2.6.2"
     typescript: "npm:~5.3.0"
     vite: "npm:^5.0.4"
@@ -4829,10 +4829,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-routing@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "svelte-routing@npm:2.6.0"
-  checksum: e7e49cab5056ac4aa1eb5782ecb373b69db8ac6bcc1577575520b8695ee69b202ab17cb2d176acf105e1b98caac3b92b48b3753b7aa45d618728943b110055ad
+"svelte-routing@npm:^2.9.0":
+  version: 2.9.0
+  resolution: "svelte-routing@npm:2.9.0"
+  checksum: 6990e0e1ace1437d63aab1218692256064976dba6acda083a62800401e8b4409ba2d1fd39ec6bb0d604d09e02f5dc2e7c273c5f64c32e897528714572c66a826
   languageName: node
   linkType: hard
 
