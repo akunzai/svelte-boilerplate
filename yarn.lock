@@ -4677,7 +4677,7 @@ __metadata:
     rxjs: "npm:^7.8.1"
     sass: "npm:^1.69.5"
     svelte: "npm:^4.2.8"
-    svelte-check: "npm:^3.6.0"
+    svelte-check: "npm:^3.6.2"
     svelte-forms-lib: "npm:^2.0.1"
     svelte-htm: "npm:^1.2.0"
     svelte-i18n: "npm:^4.0.0"
@@ -4690,9 +4690,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"svelte-check@npm:^3.6.0":
-  version: 3.6.0
-  resolution: "svelte-check@npm:3.6.0"
+"svelte-check@npm:^3.6.2":
+  version: 3.6.2
+  resolution: "svelte-check@npm:3.6.2"
   dependencies:
     "@jridgewell/trace-mapping": "npm:^0.3.17"
     chokidar: "npm:^3.4.1"
@@ -4706,7 +4706,7 @@ __metadata:
     svelte: ^3.55.0 || ^4.0.0-next.0 || ^4.0.0 || ^5.0.0-next.0
   bin:
     svelte-check: bin/svelte-check
-  checksum: 3aca0b80d99f28945d8880cbc784b66c7a34120c58ac2acd8e3c7c4c9c10b9fba64236a263d8ccf901e809d03d931a9310bcaaa4e4059bd6742be904418d28b8
+  checksum: 3f389df29268d4df9b561d0b206566e827af84923c70150b2dadfd407bcbdaccbfd561bd8b93884597de62477d62826ff1a5108854641078b692130441a49a55
   languageName: node
   linkType: hard
 
