@@ -17,5 +17,17 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: './src/setupTests.ts',
+    coverage: {
+      reporter: ['text', 'clover'],
+      include: ['src/**/*.ts', 'src/**/*.svelte'],
+      exclude: [
+        'src/App.svelte',
+        'src/i18n.ts',
+        'src/main.ts',
+        'src/setupTests.ts',
+        'src/mocks/**/*',
+        'src/**/*.d.ts',
+      ],
+    },
   },
 });
