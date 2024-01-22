@@ -7,7 +7,7 @@
 [codecov]: https://codecov.io/gh/akunzai/svelte-boilerplate
 [codecov-badge]: https://codecov.io/gh/akunzai/svelte-boilerplate/branch/main/graph/badge.svg?token=MIhzjUoLaM
 
-[Svelte](https://svelte.dev) boilerplate to kick-start new project with SCSS + Bootstrap
+[Svelte](https://svelte.dev) boilerplate to kick-start new project with CSS + Bootstrap
 
 ## Requirement
 
