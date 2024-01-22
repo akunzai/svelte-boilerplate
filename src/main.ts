@@ -1,4 +1,4 @@
-import './main.scss';
+import './main.css';
 import './i18n';
 
 // Start the mocking conditionally.
