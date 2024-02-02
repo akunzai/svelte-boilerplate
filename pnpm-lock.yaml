@@ -23,8 +23,8 @@ devDependencies:
     specifier: ^6.4.1
     version: 6.4.1(vitest@1.2.2)
   '@testing-library/svelte':
-    specifier: ^4.0.5
-    version: 4.0.5(svelte@4.2.9)
+    specifier: ^4.1.0
+    version: 4.1.0(svelte@4.2.9)
   '@testing-library/user-event':
     specifier: ^14.5.2
     version: 14.5.2(@testing-library/dom@9.3.3)
@@ -718,8 +718,8 @@ packages:
       vitest: 1.2.2(@types/node@20.11.5)(jsdom@24.0.0)
     dev: true
 
-  /@testing-library/svelte@4.0.5(svelte@4.2.9):
-    resolution: {integrity: sha512-P7X3mpYv/My4hBZfxVxTFV5KcA+EoWfRCguWP7WQdYj6HMdg/L+LiwG4ocvLe+hupedrC7dwcy85JlxKplJp2g==}
+  /@testing-library/svelte@4.1.0(svelte@4.2.9):
+    resolution: {integrity: sha512-MJqe7x9WowkiAVdk9mvazEC2ktFZdmK2OqFVoO557PC37aBemQ4ozqdK3yrG34Zg9kuln3qgTVeLSh08e69AMw==}
     engines: {node: '>= 10'}
     peerDependencies:
       svelte: ^3 || ^4
