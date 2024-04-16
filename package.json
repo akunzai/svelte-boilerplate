@@ -26,7 +26,7 @@
     "@testing-library/user-event": "^14.5.2",
     "@tsconfig/svelte": "^5.0.4",
     "@types/node": "^20.12.2",
-    "@vitest/coverage-v8": "^1.4.0",
+    "@vitest/coverage-v8": "^1.5.0",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "jsdom": "^24.0.0",
@@ -40,7 +40,7 @@
     "typescript": "~5.4.3",
     "vite": "^5.2.7",
     "vite-plugin-node-polyfills": "^0.21.0",
-    "vitest": "^1.4.0"
+    "vitest": "^1.5.0"
   },
   "msw": {
     "workerDirectory": [
