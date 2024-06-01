@@ -1,12 +1,8 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/svelte';
 import userEvent from '@testing-library/user-event';
-import { beforeAll, beforeEach, describe, expect, test, vi } from 'vitest';
+import { beforeEach, describe, expect, test, vi } from 'vitest';
 import '../i18nForTests';
 import TodoDetail from './TodoDetail.svelte';
-
-beforeAll(() => {
-  vi.spyOn(global.console, 'error').mockImplementation(() => undefined);
-});
 
 test('without Todo should render nothing', () => {
   render(TodoDetail, { id: 0 });
