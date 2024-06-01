@@ -2,5 +2,9 @@
 	"files.exclude": {
 		"**/.pnpm-store": true,
 		"**/node_modules": true
-	}
+	},
+	"cSpell.words": [
+		"textbox",
+		"todos"
+	]
 }

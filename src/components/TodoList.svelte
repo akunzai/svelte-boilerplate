@@ -9,48 +9,43 @@
   let todos: Todo[] = [];
   let title = '';
 
-  onMount(() => {
-    todoService.getTodoList().subscribe((values) => {
-      todos = values;
-    });
+  onMount(async () => {
+    todos = await todoService.getTodoList();
   });
 
-  const handleSubmit = (e: Event) => {
+  const handleSubmit = async (e: Event) => {
     e.preventDefault();
     const trimmedTitle = title.trim();
     if (!trimmedTitle) {
       return;
     }
     const newTodo = { title: trimmedTitle, done: false } as Todo;
-    todoService.addTodo(newTodo).subscribe((value) => {
-      const newTodos = [...todos];
-      if (!newTodos.some((x) => x.id === value.id)) {
-        newTodos.push(value);
-      }
-      todos = newTodos;
-    });
+    const value = await todoService.addTodo(newTodo);
+    const newTodos = [...todos];
+    if (!newTodos.some((x) => x.id === value.id)) {
+      newTodos.push(value);
+    }
+    todos = newTodos;
     title = '';
   };
 
-  const handleChecked = (todo: Todo, event: Event) => {
+  const handleChecked = async (todo: Todo, event: Event) => {
     const done = (event.target as HTMLInputElement).checked;
     const exist = todos.find((x) => x.id === todo.id);
     if (exist === undefined) return;
     const newTodo = Object.assign(exist, { done: done });
-    todoService.updateTodo(newTodo).subscribe((_) => {
-      const index = todos.findIndex((x) => x.id === todo.id);
-      if (index > -1) {
-        const newTodos = [...todos];
-        newTodos[index] = newTodo;
-        todos = newTodos;
-      }
-    });
+    await todoService.updateTodo(newTodo);
+    const index = todos.findIndex((x) => x.id === todo.id);
+    if (index > -1) {
+      const newTodos = [...todos];
+      newTodos[index] = newTodo;
+      todos = newTodos;
+    }
   };
 
-  const handleRemove = (todo: Todo) => {
-    todoService.deleteTodo(todo).subscribe((_) => {
-      todos = todos.filter((t) => t.id !== todo.id);
-    });
+  const handleRemove = async (todo: Todo) => {
+    await todoService.deleteTodo(todo);
+    todos = todos.filter((t) => t.id !== todo.id);
   };
 </script>
 

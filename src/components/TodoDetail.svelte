@@ -12,20 +12,18 @@
   const { form, handleChange, handleSubmit, updateInitialValues } =
     createForm<Todo>({
       initialValues: new Todo(id, '', undefined, false),
-      onSubmit: (values) => {
-        todoService.updateTodo(values).subscribe(() => {
-          history.back();
-        });
+      onSubmit: async (values) => {
+        await todoService.updateTodo(values);
+        history.back();
       },
     });
 
-  onMount(() => {
-    todoService.getTodo(id).subscribe((values) => {
-      if (values !== undefined) {
-        loaded = true;
-        updateInitialValues(values);
-      }
-    });
+  onMount(async () => {
+    const values = await todoService.getTodo(id);
+    if (values !== undefined) {
+      loaded = true;
+      updateInitialValues(values);
+    }
   });
 </script>
 
