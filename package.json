@@ -34,7 +34,7 @@
     "svelte-forms-lib": "^2.0.1",
     "svelte-htm": "^1.2.0",
     "svelte-i18n": "^4.0.0",
-    "tslib": "^2.6.3",
+    "tslib": "^2.7.0",
     "typescript": "~5.5.4",
     "vite": "^5.4.2",
     "vitest": "^2.0.5"
