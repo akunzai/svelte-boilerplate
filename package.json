@@ -18,7 +18,7 @@
     "svelte-routing": "^2.13.0"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^3.1.1",
+    "@sveltejs/vite-plugin-svelte": "^3.1.2",
     "@testing-library/jest-dom": "^6.4.8",
     "@testing-library/svelte": "^5.2.1",
     "@testing-library/user-event": "^14.5.2",
