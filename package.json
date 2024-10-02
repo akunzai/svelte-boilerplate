@@ -28,7 +28,7 @@
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "jsdom": "^25.0.1",
-    "msw": "^2.4.1",
+    "msw": "^2.4.9",
     "svelte": "^4.2.19",
     "svelte-check": "^4.0.4",
     "svelte-forms-lib": "^2.0.1",
