@@ -1,5 +1,5 @@
 import { http, HttpResponse } from 'msw';
-import { Todo } from '../types';
+import { Todo } from '../routes/todo/types';
 
 const db: Todo[] = [
   new Todo(1, 'Pay bills', '', true),

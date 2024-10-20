@@ -1,7 +1,7 @@
 import { http, HttpResponse } from 'msw';
 import { describe, test, expect } from 'vitest';
-import { server } from '../mocks/server';
-import { Todo } from '../types';
+import { server } from '../../mocks/node';
+import { Todo } from './types';
 import { TodoService } from './TodoService';
 
 const service = new TodoService();

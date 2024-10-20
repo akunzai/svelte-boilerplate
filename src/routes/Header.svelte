@@ -1,16 +1,17 @@
 <script lang="ts">
+  import { page } from '$app/stores';
   import { locale } from 'svelte-i18n';
-  import { Link } from 'svelte-routing';
   import { get } from 'svelte/store';
-  import { clickOutside } from '../actions';
-
-  export let title: string;
-  let collapsed = true;
-  let expanded = false;
+  import { clickOutside } from '../lib';
+  import { browser } from '$app/environment';
+  let { title }: { title: string } = $props();
+  let collapsed = $state(true);
+  let expanded = $state(false);
 
   locale.subscribe((lang) => {
-    if (!lang) return;
-    localStorage.setItem('locale', lang);
+    if (browser && lang) {
+      localStorage.setItem('locale', lang);
+    }
   });
 
   const isCurrentLanguage = (pattern: RegExp): boolean => {
@@ -37,9 +38,9 @@
         data-target=".navbar-collapse"
         aria-label="Toggle navigation"
         aria-expanded={!collapsed}
-        on:click={() => (collapsed = !collapsed)}
+        onclick={() => (collapsed = !collapsed)}
       >
-        <span class="navbar-toggler-icon" />
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div
         class={`navbar-collapse collapse d-sm-inline-flex justify-content-end ${
@@ -48,14 +49,17 @@
         role="menu"
       >
         <ul class="navbar-nav flex-grow">
-          <li class="nav-item">
-            <Link class="nav-link" to="/">Home</Link>
+          <li
+            aria-current={$page.url.pathname === '/' ? 'page' : undefined}
+            class="nav-item"
+          >
+            <a class="nav-link" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <Link class="nav-link" to="/counter">Counter</Link>
+            <a class="nav-link" href="/counter">Counter</a>
           </li>
           <li class="nav-item">
-            <Link class="nav-link" to="/todo-list">Todo</Link>
+            <a class="nav-link" href="/todo">Todo</a>
           </li>
           <li class="nav-item dropdown">
             <button
@@ -65,7 +69,7 @@
               data-bs-toggle="dropdown"
               data-bs-auto-close="true"
               aria-expanded={expanded}
-              on:click={() => (expanded = !expanded)}
+              onclick={() => (expanded = !expanded)}
               use:clickOutside={{
                 enabled: expanded,
                 cb: () => {
@@ -73,7 +77,7 @@
                 },
               }}
             >
-              <i class="bi bi-globe" />
+              <i class="bi bi-globe"></i>
             </button>
             {#if expanded}
               <ul
@@ -85,7 +89,7 @@
                     class={`dropdown-item ${
                       isCurrentLanguage(/^en/i) ? 'active' : ''
                     }`}
-                    on:click={() => changeLanguage('en')}
+                    onclick={() => changeLanguage('en')}
                   >
                     English
                   </button>
@@ -95,7 +99,7 @@
                     class={`dropdown-item ${
                       isCurrentLanguage(/^zh/i) ? 'active' : ''
                     }`}
-                    on:click={() => changeLanguage('zh-Hant')}
+                    onclick={() => changeLanguage('zh-Hant')}
                   >
                     中文(繁體)
                   </button>

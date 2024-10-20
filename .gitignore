@@ -4,7 +4,11 @@
 /node_modules
 /.pnpm-store
 
-# dist
+# Output
+.output
+.vercel
+/.svelte-kit
+/build
 /dist
 
 # IDE - VSCode
@@ -19,6 +23,6 @@
 npm-debug.log
 yarn-error.log
 
-# System Files
+# OS
 .DS_Store
 Thumbs.db
