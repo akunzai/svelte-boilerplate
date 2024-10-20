@@ -39,7 +39,7 @@
         aria-expanded={!collapsed}
         on:click={() => (collapsed = !collapsed)}
       >
-        <span class="navbar-toggler-icon" />
+        <span class="navbar-toggler-icon" ></span>
       </button>
       <div
         class={`navbar-collapse collapse d-sm-inline-flex justify-content-end ${
@@ -73,7 +73,7 @@
                 },
               }}
             >
-              <i class="bi bi-globe" />
+              <i class="bi bi-globe" ></i>
             </button>
             {#if expanded}
               <ul

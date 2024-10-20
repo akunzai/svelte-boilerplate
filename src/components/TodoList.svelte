@@ -68,7 +68,7 @@
           id="button-addon2"
           aria-label="Add"
         >
-          <i class="bi bi-plus" />
+          <i class="bi bi-plus" ></i>
         </button>
       </div>
     </form>
@@ -96,7 +96,7 @@
               class="btn-close"
               aria-label="Close"
               on:click={() => handleRemove(todo)}
-            />
+            ></button>
           </div>
         </div>
       {/each}

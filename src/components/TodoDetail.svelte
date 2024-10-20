@@ -38,7 +38,7 @@
       on:click={() => {
         history.back();
       }}
-    />
+    ></button>
     <div class="mb-3">
       <label class="form-label" for="title">
         {$_('Title')}
@@ -64,7 +64,7 @@
         class="form-control"
         aria-label="Description"
         placeholder={$_('Description')}
-      />
+      ></textarea>
     </div>
     <div class="mb-3">
       <div class="form-check">
