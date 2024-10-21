@@ -3,7 +3,7 @@ import { svelte } from '@sveltejs/vite-plugin-svelte';
 import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   build: {
     target: 'esnext',
   },
@@ -12,7 +12,6 @@ export default defineConfig({
     open: true,
   },
   test: {
-    alias: [{ find: /^svelte$/, replacement: 'svelte/internal' }],
     globals: true,
     environment: 'jsdom',
     setupFiles: './src/setupTests.ts',
@@ -29,4 +28,7 @@ export default defineConfig({
       ],
     },
   },
-});
+  resolve: {
+    conditions: mode === 'test' ? ['browser'] : []
+  }
+}));
