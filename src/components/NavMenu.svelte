@@ -4,9 +4,13 @@
   import { get } from 'svelte/store';
   import { clickOutside } from '../actions';
 
-  export let title: string;
-  let collapsed = true;
-  let expanded = false;
+  interface Props {
+    title: string;
+  }
+
+  let { title }: Props = $props();
+  let collapsed = $state(true);
+  let expanded = $state(false);
 
   locale.subscribe((lang) => {
     if (!lang) return;
@@ -37,7 +41,7 @@
         data-target=".navbar-collapse"
         aria-label="Toggle navigation"
         aria-expanded={!collapsed}
-        on:click={() => (collapsed = !collapsed)}
+        onclick={() => (collapsed = !collapsed)}
       >
         <span class="navbar-toggler-icon" ></span>
       </button>
@@ -65,7 +69,7 @@
               data-bs-toggle="dropdown"
               data-bs-auto-close="true"
               aria-expanded={expanded}
-              on:click={() => (expanded = !expanded)}
+              onclick={() => (expanded = !expanded)}
               use:clickOutside={{
                 enabled: expanded,
                 cb: () => {
@@ -85,7 +89,7 @@
                     class={`dropdown-item ${
                       isCurrentLanguage(/^en/i) ? 'active' : ''
                     }`}
-                    on:click={() => changeLanguage('en')}
+                    onclick={() => changeLanguage('en')}
                   >
                     English
                   </button>
@@ -95,7 +99,7 @@
                     class={`dropdown-item ${
                       isCurrentLanguage(/^zh/i) ? 'active' : ''
                     }`}
-                    on:click={() => changeLanguage('zh-Hant')}
+                    onclick={() => changeLanguage('zh-Hant')}
                   >
                     中文(繁體)
                   </button>

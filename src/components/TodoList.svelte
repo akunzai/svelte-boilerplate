@@ -6,8 +6,8 @@
   import type { Todo } from '../types';
 
   const todoService = new TodoService();
-  let todos: Todo[] = [];
-  let title = '';
+  let todos: Todo[] = $state([]);
+  let title = $state('');
 
   onMount(async () => {
     todos = await todoService.getTodoList();
@@ -52,7 +52,7 @@
 <div class="row justify-content-md-center">
   <div class="col-6">
     <h1>{$_('Todo List')}</h1>
-    <form on:submit={handleSubmit}>
+    <form onsubmit={handleSubmit}>
       <div class="input-group">
         <input
           type="text"
@@ -82,7 +82,7 @@
                 name="done"
                 type="checkbox"
                 checked={todo.done}
-                on:change={(e) => handleChecked(todo, e)}
+                onchange={(e) => handleChecked(todo, e)}
               />
             </div>
             <Link
@@ -95,7 +95,7 @@
               type="button"
               class="btn-close"
               aria-label="Close"
-              on:click={() => handleRemove(todo)}
+              onclick={() => handleRemove(todo)}
             ></button>
           </div>
         </div>

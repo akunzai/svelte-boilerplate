@@ -12,8 +12,10 @@
   <main class="container">
     <Route path="/counter"><Counter /></Route>
     <Route path="/todo-list"><TodoList /></Route>
-    <Route path="/todo/:id" let:params
-      ><TodoDetail id={Number(params.id)} /></Route
+    <Route path="/todo/:id" 
+      >{#snippet children({ params }: { params: { id: string } })}
+            <TodoDetail id={Number(params.id)} />          {/snippet}
+        </Route
     >
     <Route><Home /></Route>
   </main>

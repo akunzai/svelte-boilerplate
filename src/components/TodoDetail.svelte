@@ -6,8 +6,12 @@
   import { Todo } from '../types';
 
   const todoService = new TodoService();
-  export let id: number;
-  let loaded = false;
+  interface Props {
+    id: number;
+  }
+
+  let { id }: Props = $props();
+  let loaded = $state(false);
 
   const { form, handleChange, handleSubmit, updateInitialValues } =
     createForm<Todo>({
@@ -30,12 +34,12 @@
 {#if !loaded}
   <div>Loading...</div>
 {:else}
-  <form on:submit={handleSubmit}>
+  <form onsubmit={handleSubmit}>
     <button
       type="button"
       class="btn-close float-end"
       aria-label="Close"
-      on:click={() => {
+      onclick={() => {
         history.back();
       }}
     ></button>
@@ -46,7 +50,7 @@
       <input
         name="title"
         bind:value={$form.title}
-        on:change={handleChange}
+        onchange={handleChange}
         class="form-control"
         aria-label="Title"
         placeholder={$_('Title')}
@@ -60,7 +64,7 @@
       <textarea
         name="description"
         bind:value={$form.description}
-        on:change={handleChange}
+        onchange={handleChange}
         class="form-control"
         aria-label="Description"
         placeholder={$_('Description')}
@@ -72,7 +76,7 @@
           name="done"
           type="checkbox"
           bind:checked={$form.done}
-          on:change={handleChange}
+          onchange={handleChange}
           class="form-check-input"
         />
         <label class="form-check-label" for="done">
