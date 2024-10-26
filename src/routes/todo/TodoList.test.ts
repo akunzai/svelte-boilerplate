@@ -10,7 +10,7 @@ import userEvent from '@testing-library/user-event';
 import { HttpResponse, http } from 'msw';
 import { beforeEach, expect, test } from 'vitest';
 import { server } from '../../mocks/node';
-import TodoList from './+page.svelte';
+import TodoList from './TodoList.svelte';
 
 beforeEach(async () => {
   render(TodoList);
