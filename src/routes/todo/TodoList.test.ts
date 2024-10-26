@@ -5,19 +5,15 @@ import {
   waitFor,
   waitForElementToBeRemoved,
 } from '@testing-library/svelte';
+import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
 import { HttpResponse, http } from 'msw';
-import html from 'svelte-htm';
-import { Router } from 'svelte-routing';
 import { beforeEach, expect, test } from 'vitest';
-import '../i18nForTests';
-import { server } from '../mocks/server';
-import TodoList from './TodoList.svelte';
+import { server } from '../../mocks/node';
+import TodoList from './+page.svelte';
 
 beforeEach(async () => {
-  render(html`<${Router}>
-    <${TodoList} />
-  <//>`);
+  render(TodoList);
 });
 
 test('should renders as expected', async () => {

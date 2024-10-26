@@ -1,32 +1,27 @@
-/// <reference types="vitest" />
-import { svelte } from '@sveltejs/vite-plugin-svelte';
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
+import { sveltekit } from '@sveltejs/kit/vite';
+import { svelteTesting } from '@testing-library/svelte/vite';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   build: {
     target: 'esnext',
   },
-  plugins: [svelte()],
+  plugins: [sveltekit(), svelteTesting()],
   server: {
     open: true,
   },
   test: {
-    alias: [{ find: /^svelte$/, replacement: 'svelte/internal' }],
-    globals: true,
-    environment: 'jsdom',
-    setupFiles: './src/setupTests.ts',
     coverage: {
       reporter: ['text', 'clover'],
-      include: ['src/**/*.ts', 'src/**/*.svelte'],
+      include: ['src/routes/**/*.ts', 'src/routes/**/*.svelte'],
       exclude: [
-        'src/App.svelte',
-        'src/i18n.ts',
-        'src/main.ts',
-        'src/setupTests.ts',
-        'src/mocks/**/*',
-        'src/**/*.d.ts',
+        '**/*.d.ts',
+        '**/+*.{svelte,ts}',
+        '**/*.test.ts',
       ],
     },
+    environment: 'jsdom',
+    globals: true,
+    setupFiles: ['./vitest-setup.ts']
   },
 });

@@ -1,7 +1,6 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/svelte';
 import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
-import '../i18nForTests';
 import TodoDetail from './TodoDetail.svelte';
 
 test('without Todo should render nothing', () => {

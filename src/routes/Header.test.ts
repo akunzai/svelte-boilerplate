@@ -1,14 +1,9 @@
 import { fireEvent, render, screen } from '@testing-library/svelte';
-import html from 'svelte-htm';
-import { Router } from 'svelte-routing';
 import { beforeEach, expect, test } from 'vitest';
-import '../i18nForTests';
-import NavMenu from './NavMenu.svelte';
+import Header from './Header.svelte';
 
 beforeEach(() => {
-  render(html`<${Router}>
-    <${NavMenu} title=${'Test'} />
-  <//>`);
+  render(Header, { title: 'Test' });
 });
 
 test('should render with title: Test', async () => {

@@ -1,28 +1,33 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import { createForm } from 'svelte-forms-lib';
   import { _ } from 'svelte-i18n';
-  import { TodoService } from '../api';
+  import { TodoService } from '../TodoService';
   import { Todo } from '../types';
 
   const todoService = new TodoService();
-  export let id: number;
-  let loaded = false;
+  let { id }: { id: number } = $props();
+  let loaded = $state(false);
+  let todo: Todo = $state(new Todo(id, '', undefined, false));
 
-  const { form, handleChange, handleSubmit, updateInitialValues } =
-    createForm<Todo>({
-      initialValues: new Todo(id, '', undefined, false),
-      onSubmit: async (values) => {
-        await todoService.updateTodo(values);
-        history.back();
-      },
-    });
+  const handleSubmit = async (event: Event) => {
+    event.preventDefault();
+    await todoService.updateTodo(todo);
+    history.back();
+  };
+
+  const handleChange = (event: Event) => {
+    const { name, value, type, checked } = event.target as HTMLInputElement;
+    todo = {
+      ...todo,
+      [name]: type === 'checkbox' ? checked : value,
+    };
+  };
 
   onMount(async () => {
     const values = await todoService.getTodo(id);
     if (values !== undefined) {
       loaded = true;
-      updateInitialValues(values);
+      todo = values;
     }
   });
 </script>
@@ -30,23 +35,23 @@
 {#if !loaded}
   <div>Loading...</div>
 {:else}
-  <form on:submit={handleSubmit}>
+  <form onsubmit={handleSubmit}>
     <button
       type="button"
       class="btn-close float-end"
       aria-label="Close"
-      on:click={() => {
+      onclick={() => {
         history.back();
       }}
-    />
+    ></button>
     <div class="mb-3">
       <label class="form-label" for="title">
         {$_('Title')}
       </label>
       <input
         name="title"
-        bind:value={$form.title}
-        on:change={handleChange}
+        bind:value={todo.title}
+        onchange={handleChange}
         class="form-control"
         aria-label="Title"
         placeholder={$_('Title')}
@@ -59,20 +64,20 @@
       </label>
       <textarea
         name="description"
-        bind:value={$form.description}
-        on:change={handleChange}
+        bind:value={todo.description}
+        onchange={handleChange}
         class="form-control"
         aria-label="Description"
         placeholder={$_('Description')}
-      />
+      ></textarea>
     </div>
     <div class="mb-3">
       <div class="form-check">
         <input
           name="done"
           type="checkbox"
-          bind:checked={$form.done}
-          on:change={handleChange}
+          bind:checked={todo.done}
+          onchange={handleChange}
           class="form-check-input"
         />
         <label class="form-check-label" for="done">

@@ -1,13 +1,12 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { _ } from 'svelte-i18n';
-  import { Link } from 'svelte-routing';
-  import { TodoService } from '../api';
-  import type { Todo } from '../types';
+  import { TodoService } from './TodoService';
+  import type { Todo } from './types';
 
   const todoService = new TodoService();
-  let todos: Todo[] = [];
-  let title = '';
+  let todos: Todo[] = $state([]);
+  let title = $state('');
 
   onMount(async () => {
     todos = await todoService.getTodoList();
@@ -52,7 +51,7 @@
 <div class="row justify-content-md-center">
   <div class="col-6">
     <h1>{$_('Todo List')}</h1>
-    <form on:submit={handleSubmit}>
+    <form onsubmit={handleSubmit}>
       <div class="input-group">
         <input
           type="text"
@@ -68,7 +67,7 @@
           id="button-addon2"
           aria-label="Add"
         >
-          <i class="bi bi-plus" />
+          <i class="bi bi-plus"></i>
         </button>
       </div>
     </form>
@@ -82,21 +81,21 @@
                 name="done"
                 type="checkbox"
                 checked={todo.done}
-                on:change={(e) => handleChecked(todo, e)}
+                onchange={(e) => handleChecked(todo, e)}
               />
             </div>
-            <Link
+            <a
               class={todo.done ? 'text-decoration-line-through' : ''}
-              to={`/todo/${todo.id}`}
+              href={`/todo/${todo.id}`}
             >
               {todo.title}
-            </Link>
+            </a>
             <button
               type="button"
               class="btn-close"
               aria-label="Close"
-              on:click={() => handleRemove(todo)}
-            />
+              onclick={() => handleRemove(todo)}
+            ></button>
           </div>
         </div>
       {/each}
