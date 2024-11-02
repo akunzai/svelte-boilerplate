@@ -30,7 +30,7 @@
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "jsdom": "^25.0.1",
-    "msw": "^2.5.1",
+    "msw": "^2.6.0",
     "svelte": "^5.1.9",
     "svelte-check": "^4.0.5",
     "svelte-i18n": "^4.0.1",
@@ -45,7 +45,7 @@
   },
   "msw": {
     "workerDirectory": [
-      "public"
+      "static"
     ]
   }
 }
