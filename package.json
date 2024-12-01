@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.12.3",
+  "packageManager": "pnpm@9.14.4",
   "scripts": {
     "prepare": "svelte-kit sync",
     "start": "vite dev",
@@ -30,7 +30,7 @@
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "jsdom": "^25.0.1",
-    "msw": "^2.6.0",
+    "msw": "^2.6.6",
     "svelte": "^5.1.9",
     "svelte-check": "^4.0.5",
     "svelte-i18n": "^4.0.1",
