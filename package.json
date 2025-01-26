@@ -17,7 +17,7 @@
     "i18n:extract": "svelte-i18n extract 'src/**/*.svelte'"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^3.3.1",
+    "@sveltejs/adapter-auto": "^4.0.0",
     "@sveltejs/kit": "^2.15.1",
     "@sveltejs/vite-plugin-svelte": "^4.0.4",
     "@testing-library/jest-dom": "^6.6.3",
