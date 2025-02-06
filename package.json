@@ -47,5 +47,12 @@
     "workerDirectory": [
       "static"
     ]
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "es5-ext",
+      "esbuild",
+      "msw"
+    ]
   }
 }
