@@ -27,7 +27,7 @@
     "@types/node": "^24.0.1",
     "@vitest/coverage-v8": "^3.2.3",
     "@vitest/ui": "3.2.3",
-    "bootstrap": "^5.3.6",
+    "bootstrap": "^5.3.7",
     "bootstrap-icons": "^1.13.1",
     "jsdom": "^26.1.0",
     "msw": "^2.10.2",
