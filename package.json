@@ -40,8 +40,8 @@
     "vitest": "^3.2.4"
   },
   "resolutions": {
-    "cookie": "^1.0.1",
-    "rollup": "4.24.0"
+    "cookie": "^1.0.2",
+    "esbuild": "^0.25.0"
   },
   "msw": {
     "workerDirectory": [
