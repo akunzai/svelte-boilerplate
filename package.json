@@ -49,6 +49,9 @@
     ]
   },
   "pnpm": {
+    "overrides": {
+      "devalue": "5.3.2"
+    },
     "onlyBuiltDependencies": [
       "es5-ext",
       "esbuild",
