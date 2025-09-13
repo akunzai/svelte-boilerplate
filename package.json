@@ -14,7 +14,8 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "lint": "svelte-check --tsconfig ./tsconfig.json",
-    "i18n:extract": "svelte-i18n extract 'src/**/*.svelte'"
+    "i18n:extract": "svelte-i18n extract 'src/**/*.svelte'",
+    "msw": "pnpm dlx msw init"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^6.1.0",
