@@ -18,7 +18,7 @@
     "msw": "pnpm dlx msw init"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^6.1.0",
+    "@sveltejs/adapter-auto": "^7.0.0",
     "@sveltejs/kit": "^2.43.7",
     "@sveltejs/vite-plugin-svelte": "^6.2.1",
     "@testing-library/jest-dom": "^6.9.1",
