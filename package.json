@@ -30,7 +30,7 @@
     "@vitest/ui": "3.2.4",
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
-    "jsdom": "^27.1.0",
+    "jsdom": "^27.2.0",
     "msw": "^2.11.3",
     "svelte": "^5.38.10",
     "svelte-check": "^4.3.3",
