@@ -31,7 +31,7 @@
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
     "jsdom": "^27.1.0",
-    "msw": "^2.11.3",
+    "msw": "^2.12.3",
     "svelte": "^5.38.10",
     "svelte-check": "^4.3.3",
     "svelte-i18n": "^4.0.1",
