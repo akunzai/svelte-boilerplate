@@ -33,7 +33,7 @@
     "jsdom": "^27.1.0",
     "msw": "^2.11.3",
     "svelte": "^5.38.10",
-    "svelte-check": "^4.3.3",
+    "svelte-check": "^4.3.4",
     "svelte-i18n": "^4.0.1",
     "tslib": "^2.8.1",
     "typescript": "~5.9.3",
