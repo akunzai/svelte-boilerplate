@@ -11,29 +11,28 @@
 
 ## Requirement
 
-- [Node.js](https://nodejs.org)
-- [pnpm](https://pnpm.io/)
+- [Bun.js](https://bun.sh/)
 
 ## Get started
 
 ```sh
-# activate the pnpm package manager
-corepack enable
+# install Bun
+brew install oven-sh/bun/bun
 
-# install npm packages
-pnpm install
+# install packages
+bun install
 
 # watch and serve a dev server at http://localhost:5173/
-pnpm start
+bun run start
 
 # Running unit tests
-pnpm test
+bun test
 
-# build the project in production mode. The build artifacts will be stored in the `.svelte-kit/` directory
-pnpm build
+# build the project in production mode.
+bun run build
 
 # extracts i18n messages from source code
-pnpm i18n:extract src/lib/i18n/locales/zh-Hant.json
+bun run i18n:extract src/lib/i18n/locales/zh-Hant.json
 ```
 
 ## Reference

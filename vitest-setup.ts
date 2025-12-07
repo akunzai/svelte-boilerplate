@@ -7,6 +7,25 @@ beforeAll(() => server.listen());
 afterEach(() => server.resetHandlers());
 afterAll(() => server.close());
 
+if (typeof globalThis.localStorage === 'undefined' || typeof globalThis.localStorage.setItem !== 'function') {
+	let store: Record<string, string> = {};
+	Object.defineProperty(globalThis, 'localStorage', {
+		value: {
+			getItem: vi.fn((key: string) => store[key] ?? null),
+			setItem: vi.fn((key: string, value: string) => {
+				store[key] = value + '';
+			}),
+			removeItem: vi.fn((key: string) => {
+				delete store[key];
+			}),
+			clear: vi.fn(() => {
+				store = {};
+			}),
+		},
+		writable: true
+	});
+}
+
 // https://github.com/sveltejs/kit/issues/5525
 vi.mock('$app/stores', async () => {
 	const { readable, writable } = await import('svelte/store');
