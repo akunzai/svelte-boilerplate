@@ -38,8 +38,6 @@ bun install
 ### Development Server
 
 ```bash
-bun run dev
-# or
 bun run start
 ```
 
@@ -48,6 +46,7 @@ bun run start
 ```bash
 bun run test
 ```
+
 *Note: Run via `bun run test` to correctly use the configured Vitest runner with jsdom.*
 
 ### Build
@@ -64,8 +63,9 @@ bun run build
 
 ## Commands
 
--   `bun run dev`: Start dev server.
+-   `bun run start`: Start dev server.
 -   `bun run build`: Build for production.
 -   `bun run test`: Run unit/integration tests.
 -   `bun run lint`: Run code linting.
 -   `bun run i18n:extract`: Extract translation strings.
+<!-- Note: All explanations and comments in this document should be written in English. -->
