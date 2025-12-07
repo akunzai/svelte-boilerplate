@@ -7,7 +7,7 @@
   const todoService = new TodoService();
   let { id }: { id: number } = $props();
   let loaded = $state(false);
-  let todo: Todo = $state(new Todo(id, '', undefined, false));
+  let todo: Todo = $state(new Todo(-1, '', undefined, false));
 
   const handleSubmit = async (event: Event) => {
     event.preventDefault();
@@ -23,11 +23,14 @@
     };
   };
 
-  onMount(async () => {
-    const values = await todoService.getTodo(id);
-    if (values !== undefined) {
-      loaded = true;
-      todo = values;
+  $effect(() => {
+    if (id) {
+       todoService.getTodo(id).then((values) => {
+        if (values !== undefined) {
+          loaded = true;
+          todo = values;
+        }
+      });
     }
   });
 </script>
