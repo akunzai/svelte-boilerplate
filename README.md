@@ -16,9 +16,6 @@
 ## Get started
 
 ```sh
-# install Bun
-brew install oven-sh/bun/bun
-
 # install packages
 bun install
 

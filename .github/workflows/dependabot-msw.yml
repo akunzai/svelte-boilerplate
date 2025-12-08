@@ -31,8 +31,6 @@ jobs:
       - name: Set up Bun
         if: steps.check-msw.outputs.msw_updated == 'true'
         uses: oven-sh/setup-bun@v2
-        with:
-          bun-version: latest
 
       - name: Install dependencies
         if: steps.check-msw.outputs.msw_updated == 'true'
