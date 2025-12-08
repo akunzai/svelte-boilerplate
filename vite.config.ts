@@ -27,7 +27,10 @@ export default defineConfig({
       ],
     },
     environment: 'jsdom',
+    env: {
+      NODE_NO_WARNINGS: '1',
+    },
     globals: true,
-    setupFiles: ['./vitest-setup.ts']
+    setupFiles: ['./vitest-setup.ts'],
   },
 });
