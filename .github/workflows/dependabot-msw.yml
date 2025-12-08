@@ -1,0 +1,62 @@
+name: Update MSW Service Worker
+
+on:
+  pull_request:
+    paths:
+      - 'package.json'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-msw:
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+
+      - name: Check if MSW was updated
+        id: check-msw
+        run: |
+          if git diff origin/${{ github.base_ref }}...HEAD -- package.json | grep -q '"msw"'; then
+            echo "msw_updated=true" >> $GITHUB_OUTPUT
+          else
+            echo "msw_updated=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Set up Bun
+        if: steps.check-msw.outputs.msw_updated == 'true'
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        if: steps.check-msw.outputs.msw_updated == 'true'
+        run: bun install
+
+      - name: Update MSW Service Worker
+        if: steps.check-msw.outputs.msw_updated == 'true'
+        run: bunx msw init static --save
+
+      - name: Check for changes
+        if: steps.check-msw.outputs.msw_updated == 'true'
+        id: check-changes
+        run: |
+          if git diff --quiet static/mockServiceWorker.js; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.check-msw.outputs.msw_updated == 'true' && steps.check-changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add static/mockServiceWorker.js
+          git commit -m "chore: update mockServiceWorker.js for msw update"
+          git push
