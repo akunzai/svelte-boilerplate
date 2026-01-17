@@ -27,7 +27,7 @@
     "@tsconfig/svelte": "^5.0.6",
     "@types/node": "^24.10.1",
     "@vitest/coverage-v8": "^4.0.15",
-    "@vitest/ui": "4.0.15",
+    "@vitest/ui": "4.0.16",
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
     "jsdom": "^27.2.0",
