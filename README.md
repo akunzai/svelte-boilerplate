@@ -11,7 +11,7 @@
 
 ## Requirement
 
-- [Bun.js](https://bun.sh/)
+- [Bun](https://bun.sh/)
 
 ## Get started
 
